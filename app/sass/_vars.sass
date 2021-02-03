@@ -1,0 +1,58 @@
+$default-font: "Rubik", sans-serif
+$roboto: 'Roboto', sans-serif
+
+//colors
+$accent: orange
+$text: #201F37
+$blue: #0046E3
+$red: #FF3D60
+$yellow: #F5CB48
+$orange: #FFC636
+$green: #9DD13C
+$black: #181738
+$links: #404040
+
+//mixin
+@mixin display-center
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+
+@mixin display-start
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+
+@mixin display-stretch
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+
+@mixin display-center-center
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+
+@mixin display-center-between
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+
+@mixin display-center-start
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  flex-wrap: wrap
+
+@mixin display-center-end
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  flex-wrap: wrap
+
+@mixin display-column
+  display: flex
+  align-items: flex-start
+  flex-direction: column

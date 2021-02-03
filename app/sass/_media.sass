@@ -1,0 +1,421 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px)
+  /**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px)
+  .header-box
+    padding: 20px
+    max-width: 400px
+
+  .logo-wrapper
+    width: calc(100% - 400px)
+
+  .menu
+    margin: 0 20px 0 0
+
+  .main-home__content
+    max-width: 400px
+    padding: 30px
+
+    h1
+      margin: 30px 0
+
+  .btn
+    height: 55px
+    font-size: 14px
+
+  header .logo
+    margin: 0
+
+  .contests-box
+    h3
+      font-size: 16px
+
+  .contests-box-max
+    h3
+      font-size: 24px
+
+  .footer-wrapper
+    padding: 20px
+    font-size: 16px
+
+
+  .footer-menu
+    margin: 0 auto 0 0
+
+
+
+@media only screen and (max-width: 768px)
+  header
+    .logo
+      max-width: 160px
+
+
+  .fullscreen-bg__video
+    display: none
+
+  .main-home
+    background: #0046E3 url("../img/video-poster.png") no-repeat center
+      size: cover
+    padding: 22px 0 20px
+
+    .btn
+      max-width: 335px
+      margin: 0 auto
+
+    h1
+      margin: 17px 0 129px
+
+  .main-home__content
+    background: transparent
+    padding: 0
+    max-width: none
+    min-height: auto
+
+    h3
+      font-size: 15px
+
+  .btn-video
+    display: flex
+
+  h1
+    font-size: 25px
+
+  h2
+    font-size: 20px
+    margin: 0 0 13px
+
+  .about-numbers__box
+    padding-left: 20px
+    font-size: 13px
+
+    p
+      font-size: 20px
+
+  .about-numbers__box-slider-item
+    p
+      font-size: 16px
+
+  .contests-box
+    width: 50%
+    min-height: 300px
+    padding: 13px 20px 0
+
+  .contests-box .btn
+    margin: auto 0 0 -20px
+
+  .points
+    margin: auto 0 20px
+
+  .contests-box-max h3
+    font-size: 18px
+
+  .links
+    font-size: 18px
+
+  .contests-box__img
+    bottom: -70px
+
+  .contests-box .line
+    margin: 0 0 20px
+
+  .contests
+    margin: 0 0 20px
+
+  .score-box
+    min-height: 308px
+    padding: 23px 0 0
+
+    h3
+      font-size: 20px
+      max-width: 155px
+
+  .score-box1
+    .score-box__img
+      max-width: 328px
+
+    h3
+      margin: 0 40px 0 auto
+
+  .score-box2 .score-box__img
+    max-width: 253px
+
+  .score-box3
+    h3
+      margin: 0 20px 0 auto
+      max-width: 130px
+
+  .score-box5 h3
+    margin: 0 0 0 20px
+
+  .news
+    margin: 29px 0 40px
+
+  .news-box__title
+    font-size: 20px
+
+  .about-content
+    padding: 30px
+    width: calc(100% - 200px)
+
+  .about-title
+    padding: 30px 30px 0 0
+    width: 200px
+
+  .footer-bg-box
+    display: none
+
+  .footer-content
+    width: 100%
+
+  .footer-wrapper
+    padding: 32px 20px
+    &:before
+      display: none
+
+  .copyright
+    padding: 12px 20px
+
+  footer
+    .container
+      padding: 0
+
+  .list-social
+    margin: 33px 0 0
+
+  .competition
+    margin: 6px 0 38px
+
+@media only screen and (max-width: 630px)
+  .header-box
+    background: transparent
+    padding: 0
+
+  header
+    padding: 20px 0
+
+    .menu
+      display: none
+
+    .logo
+      margin: 0 auto
+
+  .links-cabinet
+    .text
+      display: none
+
+    .svg-icon
+      fill: #fff
+      margin: 0
+      width: 17px
+      height: 17px
+
+  .btn-burger
+    display: block
+
+  .logo-wrapper
+    width: auto
+    margin: 0 auto
+
+  .header .logo-wrapper
+    background: transparent
+
+  .header-box
+    width: auto
+
+@media only screen and (max-width: 575px)
+  .about-numbers__box
+    width: 50%
+    min-height: auto
+    padding: 15px 19px 13px
+
+    span
+      max-width: 148px
+
+    p
+      margin: 0 0 5px
+
+    .btn-black
+      margin: 20px auto
+      max-width: 335px
+
+  .about-numbers
+    .container
+      padding: 0
+
+  .about-numbers__box-max
+    width: 100%
+    order: 1
+
+  .about-numbers__box.bg-yellow:before, .about-numbers__box.bg-yellow:after, .about-numbers__box.bg-violet:before
+    display: none
+
+  .about-numbers__box-slider
+    max-width: none
+
+    p
+      margin: 0
+
+    .slick-dots
+      margin: 18px 0 0
+
+  .about-numbers
+    margin: 0 0 17px
+
+  .contests-box
+    width: 100%
+    min-height: 335px
+    display: none
+    h3
+      margin: 0 0 47px
+      font-size: 18px
+      text-transform: none
+
+    &:nth-child(1), &:nth-child(2), &:last-child
+      display: flex
+
+  .contests-box-max
+    h3
+      margin: 0 0 68px
+
+  .score-box
+    display: none
+    width: 100%
+    margin: 0
+
+    &:nth-child(1), &:nth-child(2)
+      display: flex
+
+    h3
+      margin: 0 0 0 30px
+      max-width: 145px
+
+    .btn
+      display: none
+
+  .score-box1
+    h3
+      margin: 0 40px 0 auto
+
+  .score
+    .container
+      padding: 0
+
+    h2
+      padding: 0 20px
+
+  .news-box__img
+    width: 100px
+    height: 76px
+    position: absolute
+    left: 0
+    top: 0
+
+  .news-box__body
+    width: 100%
+    padding: 0
+
+  .news-box
+    position: relative
+    margin: 0 0 27px
+    font-size: 16px
+
+  .news-box__title
+    padding: 0 0 0 119px
+    font-size: 18px
+    margin: 0 0 19px
+    text-transform: none
+    min-height: 76px
+
+  .news
+    margin: 29px 0 13px
+
+  .news-box__date
+    font-size: 12px
+    margin: 9px 0 0
+
+  .about-title
+    display: none
+
+  .about
+    background: #fff
+    padding: 27px 0
+
+  .about-content
+    padding: 0
+    background: transparent
+    max-width: none
+    font-size: 14px
+    width: 100%
+
+  .logo-icon
+    width: 150px
+    height: 16px
+    margin: 0 0 10px
+
+  .modal__close
+    margin: 16px auto 0
+    display: flex
+
+@media only screen and (max-width: 480px)
+  .footer-menu
+    width: 100%
+    margin: 0 0 34px
+
+  .footer-wrapper
+    font-size: 14px
+
+  .modal__body-content
+    padding: 18px 20px
+
+  .tabs__caption
+    font-size: 13px
+    li
+      padding: 13px 0
+
+  .entrance-social
+    font-size: 13px
+    margin: 0 0 11px
+    padding: 0 0 10px
+    p
+      margin: 0 0 4px
+
+  .form
+    font-size: 13px
+    input
+      width: 100%
+    button
+      margin: 17px auto 0
+
+  .consent
+    margin: 14px 0 0
+    font-size: 12px
+
+  .link-modal
+    text-align: right
+
+  input
+    padding: 0 10px
+    height: 35px
+    font-size: 13px
+
+  .input-title
+    width: 100%
+    margin: 0 0 5px
+
+  .error-text
+    font-size: 13px
+
+  .modal__div2 .modal__body-content
+    padding: 30px 20px
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px)
+  /**/
