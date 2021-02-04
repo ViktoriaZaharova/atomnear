@@ -1578,8 +1578,6 @@ footer .container {
   .form-moderation input {
     border: 1px solid #CBCBCB;
     padding: 0 12px; }
-  .form-moderation .test-box-result:first-child {
-    margin: 0; }
 
 .mt-40 {
   margin-top: 40px; }
