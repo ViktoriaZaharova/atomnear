@@ -1240,6 +1240,7 @@ footer
   .contests-box__icon
     fill: $blue
 
+
 .competition-page__img
   width: 66.7%
   img
@@ -1270,7 +1271,7 @@ footer
       content: ''
       position: absolute
       left: 0
-      top: 0
+      top: 5px
       width: 15px
       height: 15px
       background: url("../img/checkbox.svg") no-repeat center
@@ -1293,13 +1294,70 @@ footer
     font-weight: 300
     font-size: 45px
     margin: 0
+  .btn-revision
+    &:hover
+      color: $text
 
 .contests-box-reward__body
   padding: 32px 38px 10px 60px
 
 //other-competitions
 .other-competitions
-  margin: 0 0 135px
+  margin: 0 0 80px
+
+.test-box-result
+  width: 100%
+  margin: 10px 0 0
+  background: #fff
+  padding: 43px 90px 48px 50px
+  color: #201F37
+  font-size: 15px
+  h3
+    text-transform: uppercase
+    letter-spacing: 0.05em
+    font-weight: 900
+    font-size: 19px
+  .box-text
+    margin: 19px 0 25px
+
+    font-family: $roboto
+  .btn
+    letter-spacing: 0
+    font-family: $roboto
+    height: 40px
+    max-width: 159px
+
+.test-box-result__warning
+  h3
+    color: $red
+
+.test-box-result__date
+  margin: 0 0 10px
+  font-weight: bold
+  font-family: $roboto
+  @include display-center
+  .points
+    text-transform: none
+    color: $blue
+    font-family: $roboto
+    font-size: 15px
+    letter-spacing: 0
+    font-weight: 700
+    margin: 0 0 0 10px
+
+.form-moderation
+  width: 100%
+  button
+    max-width: none
+    font-size: 20px
+    font-family: $roboto
+    margin: 10px 0 0
+    text-transform: none
+    height: 86px
+  .test-box-result
+    padding: 72px 50px 47px
+  input
+    border: 1px solid #CBCBCB
 
 
 @import "media"

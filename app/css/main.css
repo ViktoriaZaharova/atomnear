@@ -1469,7 +1469,7 @@ footer .container {
     content: '';
     position: absolute;
     left: 0;
-    top: 0;
+    top: 5px;
     width: 15px;
     height: 15px;
     background: url("../img/checkbox.svg") no-repeat center;
@@ -1497,12 +1497,73 @@ footer .container {
     font-weight: 300;
     font-size: 45px;
     margin: 0; }
+  .contests-box-reward .btn-revision:hover {
+    color: #201F37; }
 
 .contests-box-reward__body {
   padding: 32px 38px 10px 60px; }
 
 .other-competitions {
-  margin: 0 0 135px; }
+  margin: 0 0 80px; }
+
+.test-box-result {
+  width: 100%;
+  margin: 10px 0 0;
+  background: #fff;
+  padding: 43px 90px 48px 50px;
+  color: #201F37;
+  font-size: 15px; }
+  .test-box-result h3 {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 900;
+    font-size: 19px; }
+  .test-box-result .box-text {
+    margin: 19px 0 25px;
+    font-family: "Roboto", sans-serif; }
+  .test-box-result .btn {
+    letter-spacing: 0;
+    font-family: "Roboto", sans-serif;
+    height: 40px;
+    max-width: 159px; }
+
+.test-box-result__warning h3 {
+  color: #FF3D60; }
+
+.test-box-result__date {
+  margin: 0 0 10px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .test-box-result__date .points {
+    text-transform: none;
+    color: #0046E3;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    letter-spacing: 0;
+    font-weight: 700;
+    margin: 0 0 0 10px; }
+
+.form-moderation {
+  width: 100%; }
+  .form-moderation button {
+    max-width: none;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    margin: 10px 0 0;
+    text-transform: none;
+    height: 86px; }
+  .form-moderation .test-box-result {
+    padding: 72px 50px 47px; }
+  .form-moderation input {
+    border: 1px solid #CBCBCB; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
@@ -1838,7 +1899,19 @@ footer .container {
       display: -ms-flexbox;
       display: flex; }
   .contests-box-reward .points {
-    font-size: 24px; } }
+    font-size: 24px; }
+  .test-box-result {
+    padding: 20px; }
+    .test-box-result h3 {
+      font-size: 16px; }
+  .form-moderation .test-box-result {
+    padding: 20px; }
+  .form-moderation button {
+    font-size: 16px;
+    height: 50px; }
+  .test-box-result__date .points {
+    margin: 5px 0 0 0;
+    width: 100%; } }
 
 @media only screen and (max-width: 480px) {
   .footer-menu {
