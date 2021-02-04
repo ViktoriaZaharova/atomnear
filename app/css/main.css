@@ -1429,6 +1429,81 @@ footer .container {
   font-size: 35px;
   font-weight: bold; }
 
+.competition-page {
+  margin: 27px 0 63px; }
+  .competition-page h1 {
+    text-decoration: underline;
+    font-size: 32px;
+    margin: 0 0 30px;
+    text-transform: uppercase; }
+  .competition-page .contests-box__icon {
+    fill: #0046E3; }
+
+.competition-page__img {
+  width: 66.7%; }
+  .competition-page__img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
+.contests-box-instruction {
+  width: 50%;
+  background: #fff;
+  padding: 38px 65px 35px 54px;
+  color: #201F37;
+  font-size: 15px; }
+  .contests-box-instruction h3 {
+    font-family: "Roboto", sans-serif;
+    margin: 0 0 15px;
+    font-size: 20px;
+    font-weight: 300; }
+
+.list-checkbox li {
+  position: relative;
+  padding: 0 0 0 27px;
+  margin: 0 0 15px; }
+  .list-checkbox li:last-child {
+    margin: 0; }
+  .list-checkbox li:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    background: url("../img/checkbox.svg") no-repeat center;
+      background-size: cover; }
+
+.links-blue {
+  color: #0046E3; }
+
+.contests-box-reward {
+  width: 50%;
+  border: 1px solid #F0F0F0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 15px; }
+  .contests-box-reward .btn {
+    max-width: none;
+    margin: auto 0 0; }
+  .contests-box-reward .points {
+    letter-spacing: 0.1em;
+    font-weight: 300;
+    font-size: 45px;
+    margin: 0; }
+
+.contests-box-reward__body {
+  padding: 32px 38px 10px 60px; }
+
+.other-competitions {
+  margin: 0 0 135px; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -1463,7 +1538,11 @@ footer .container {
   .footer-menu {
     margin: 0 auto 0 0; }
   .question-box {
-    padding: 20px; } }
+    padding: 20px; }
+  .contests-box-reward__body, .contests-box-instruction {
+    padding: 30px; }
+  .contests-box-reward .points {
+    font-size: 40px; } }
 
 @media only screen and (max-width: 768px) {
   header .logo {
@@ -1573,7 +1652,22 @@ footer .container {
     margin: 20px 0 30px;
     font-size: 30px; }
   .points-value {
-    font-size: 35px; } }
+    font-size: 35px; }
+  .competition-page__img {
+    width: 100%; }
+  .contests-box-reward {
+    text-align: center;
+    padding: 15px 20px 20px; }
+    .contests-box-reward .points {
+      font-size: 30px; }
+  .contests-box-reward__body {
+    padding: 0;
+    margin: 0 0 20px; }
+  .contests-box-instruction {
+    padding: 18px 20px 24px;
+    font-size: 13px; }
+    .contests-box-instruction h3 {
+      font-size: 18px; } }
 
 @media only screen and (max-width: 630px) {
   .header-box {
@@ -1725,6 +1819,25 @@ footer .container {
   .points-value {
     font-size: 25px; }
   .text-result {
+    font-size: 24px; }
+  .contests-box-instruction, .contests-box-reward {
+    width: 100%; }
+  .competition-page .contests-box__img {
+    display: none; }
+  .competition-page .contests-box {
+    min-height: auto; }
+    .competition-page .contests-box h3 {
+      margin: 0 0 30px; }
+  .competition-page h1 {
+    font-size: 20px;
+    margin: 0 0 13px; }
+  .other-competitions .contests-box {
+    display: none; }
+    .other-competitions .contests-box:first-child {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+  .contests-box-reward .points {
     font-size: 24px; } }
 
 @media only screen and (max-width: 480px) {
