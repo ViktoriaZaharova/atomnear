@@ -1054,7 +1054,7 @@ footer
   width: 100%
   @include display-stretch
   li
-    width: 33.3%
+    flex: 1
     a
       height: 40px
 
@@ -1078,6 +1078,11 @@ footer
       .svg-icon
         width: 12px
         height: 20px
+    .tw
+      background: #1DA1F2
+      .svg-icon
+        width: 19px
+        height: 15px
 
 .entrance-social
   padding: 0 0 20px
@@ -1091,6 +1096,138 @@ footer
 .competition
   margin: 27px 0 134px
 
+//question
+.question
+  margin: 62px 0 173px
+
+.question-box
+  border: 1px solid #F0F0F0
+  padding: 29px 165px 89px
+  width: 100%
+  font-size: 15px
+  .box-text
+    text-align: center
+    font-size: 17px
+    margin: 0 0 35px
+
+.question-box__img
+  margin: 29px auto 0
+  @include display-center-center
+  img
+    width: 100%
+
+.question-box-number
+  font-family: $roboto
+  text-align: center
+  width: 100%
+  margin: 0 auto 18px
+  font-weight: 500
+  font-size: 12px
+
+.question-box__body
+  width: 100%
+  background: #fff
+  padding: 40px
+  color: $text
+  .btn
+    font-family: $roboto
+    font-size: 15px
+    letter-spacing: 0
+    max-width: 293px
+    margin: 0 auto
+  .next-question
+    max-width: none
+
+.question-box__list
+  width: 100%
+  color: #201F37
+  font-family: $roboto
+  li
+    transition: .3s ease
+    cursor: pointer
+    border: 1px solid #CBCBCB
+    padding: 13px 16px
+    margin: 0 0 -1px
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &:after
+      content: ''
+      display: inline-block
+      width: 15px
+      height: 15px
+    &:last-child
+      margin: 0
+    &:hover, &:focus
+      background: #F0F0F0
+
+
+.clicked
+  background: #F0F0F0
+
+.correct
+  color: #7AB312
+  &:after
+    background: url("../img/correct.svg") no-repeat center
+      size: cover
+
+.error-answer
+  color: #FF3D60
+  &:after
+    background: url("../img/error.svg") no-repeat center
+      size: cover
+
+.question-box__result
+  margin: 20px 0
+
+.next-question
+  max-width: none
+
+.question-box__body-item
+  text-align: center
+  margin: 0 0 30px
+  h4
+    text-align: center
+    font-size: 15px
+    font-weight: bold
+    margin: 0 auto 15px
+    font-family: $roboto
+
+.points-value
+  letter-spacing: 0.1em
+  font-weight: 300
+  text-transform: uppercase
+  font-size: 45px
+  margin: -10px auto 0
+
+.results-test
+  width: 100%
+  position: relative
+  padding: 47px 57px 42px
+  color: #F0F0F0
+  font-family: $roboto
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(0deg, rgba(32, 31, 55, 0.5), rgba(32, 31, 55, 0.5)), url("../img/question.jpeg") no-repeat center
+      size: cover
+  >*
+    position: relative
+  p
+    font-size: 12px
+    font-weight: 500
+  .logo
+    max-width: 200px
+
+.text-result
+  margin: 24px 0 97px
+  font-size: 35px
+  font-weight: bold
 
 @import "media"
 // Всегда в конце

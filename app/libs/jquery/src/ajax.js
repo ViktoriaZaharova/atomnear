@@ -779,7 +779,7 @@ jQuery.extend( {
 				// Extract error from statusText and normalize for non-aborts
 				error = statusText;
 				if ( status || !statusText ) {
-					statusText = "error";
+					statusText = "error.svg";
 					if ( status < 0 ) {
 						status = 0;
 					}

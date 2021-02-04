@@ -80,13 +80,13 @@ jQuery.ajaxTransport( function( options ) {
 
 							if ( type === "abort" ) {
 								xhr.abort();
-							} else if ( type === "error" ) {
+							} else if ( type === "error.svg" ) {
 
 								// Support: IE <=9 only
 								// On a manual native abort, IE9 throws
 								// errors on any property access that is not readyState
 								if ( typeof xhr.status !== "number" ) {
-									complete( 0, "error" );
+									complete( 0, "error.svg" );
 								} else {
 									complete(
 
@@ -116,7 +116,7 @@ jQuery.ajaxTransport( function( options ) {
 
 				// Listen to events
 				xhr.onload = callback();
-				errorCallback = xhr.onerror = xhr.ontimeout = callback( "error" );
+				errorCallback = xhr.onerror = xhr.ontimeout = callback( "error.svg" );
 
 				// Support: IE 9 only
 				// Use onreadystatechange to replace onabort
