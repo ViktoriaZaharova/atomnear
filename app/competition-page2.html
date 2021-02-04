@@ -107,35 +107,83 @@
           <p>ты получишь за успешное выполнение задания!</p>
         </div>
 
-        <a href="#" class="btn btn-revision color-white">ОТПРАВЛЕНО НА ДОРАБОТКУ</a>
+        <a href="#" class="btn btn-performance">ВЫПОЛНЕНИЕ ЗАДАНИЯ</a>
       </div>
 
-      <div class="test-box-result test-box-result__warning">
-        <h3>ВЫ не отправили нам ссылку на опубликованный результат теста на вашей страничке в соцсети</h3>
-      </div>
-
-      <div class="test-box-result">
-        <h3>ТЕСТ ПРОЙДЕН</h3>
-        <div class="box-text">
-          <p>Количество попыток прохождения теста неограничено, но каждая новая попытка будет приносить вам на 50%
-            меньше баллов. Чтобы заработать максимум баллов, нужно правильно ответить на все вопросы с первой попытки!
-            Будет защитан максимальный балл из всех попыток.</p>
-        </div>
-
-        <div class="test-box-result__date">
-          <p>Попытка №1 – 27.01.2021 14:37</p>
-          <div class="points">35 баллов</div>
-        </div>
-
-        <a href="#" class="btn btn-blue">Пройти ещё раз</a>
-      </div>
-
-      <form method="post" class="form-moderation">
+      <form method="post" class="form-moderation mt-40">
         <div class="test-box-result">
-          <label><input type="text" required name="link"></label>
+          <h3>Напиши пост с историей</h3>
+          <div class="text-redactor">
+            <div class="text-redactor__tools">
+              <div class="tools-item"><img src="img/tools1.png" alt=""></div>
+              <div class="tools-item"><img src="img/tools2.png" alt=""></div>
+              <div class="tools-item"><img src="img/tools3.png" alt=""></div>
+            </div>
+            <div class="text-redactor__body">
+              <p>Кристалл притягивает электрон даже в случае сильных локальных возмущений среды. Разрыв масштабирует
+                разрыв, как и предсказывает общая теория поля. Квазар по определению квазипериодично представляет собой
+                резонатор. Объект по определению восстанавливает векторный фронт.</p>
+
+              <p>Если предварительно подвергнуть объекты длительному вакуумированию, расслоение стабилизирует газ.
+                Гравитирующая сфера по определению отражает эксимер. Гравитирующая сфера, в согласии с традиционными
+                представлениями, упруго концентрирует торсионный поток. Вселенная вертикально заряжает фронт. Очевидно,
+                что жидкость отклоняет плазменный вихрь.</p>
+            </div>
+          </div>
+        </div>
+        <div class="test-box-result">
+          <h3>Ссылка на пост в соцсети</h3>
+          <label><input type="text" placeholder="https://facebook.com/post855365673567/" name="link" required></label>
         </div>
 
-        <button class="btn btn-blue" type="submit">ОТПРАВИТЬ НА МОДЕРАЦИЮ</button>
+        <div class="test-box-result">
+          <h3>ВИДЕОРОЛИК</h3>
+
+          <div class="label-wrapper">
+            <label class="label-file btn-blue">
+              <input type="file" class="inp-file">
+              <span class="label-file-text">Выбрать файл</span>
+            </label>
+
+            <div class="file-description">Видеоролик длительностью не более 3 минут, весом не более 250мб и с разрешением .mov, .mp4</div>
+          </div>
+
+          <div class="label-wrapper">
+            <div class="label-file bg-orange loading-box">
+              <span class="label-file-text">Загрузка...</span>
+            </div>
+
+            <div class="file-description">Видеоролик длительностью не более 3 минут, весом не более 250мб и с разрешением .mov, .mp4</div>
+          </div>
+
+          <div class="file-result">
+            <div class="img-name">myvideo.mp4</div>
+          </div>
+          <div class="test-box-result__img">
+            <img src="img/video.png" alt="">
+          </div>
+          <a href="#" class="btn btn-blue btn-delete">Удалить</a>
+        </div>
+
+        <div class="test-box-result">
+          <h3>Изображение</h3>
+
+         <div class="label-wrapper">
+           <label class="label-file btn-blue">
+             <input type="file" class="inp-file">
+             <span class="label-file-text">Выбрать файл</span>
+           </label>
+
+           <div class="file-description">Изображение весом не более 10мб и с разрешением .jpg, .png</div>
+         </div>
+
+          <div class="file-result"><div class="img-name">socks.jpg</div></div>
+          <div class="test-box-result__img"><img src="img/img.jpg" alt=""></div>
+
+          <a href="#" class="btn btn-blue btn-delete">Удалить</a>
+        </div>
+
+        <button class="btn btn-blue" type="button">ОТПРАВИТЬ НА МОДЕРАЦИЮ</button>
       </form>
     </div>
   </div>
