@@ -1,11 +1,5 @@
 @import "vars"
 
-/*==========  Desktop First  ==========*/
-
-/* Large Devices, Wide Screens */
-@media only screen and (max-width: 1200px)
-  /**/
-
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
@@ -60,8 +54,6 @@
     font-size: 40px
 
   .btn-video
-    left: 64%
-    transform: translate(-50%,-50%)
     font-size: 15px
 
   .score-box
@@ -332,22 +324,26 @@
   .about-numbers__box-max
     width: 100%
     order: 1
-    padding: 20px 19px 24px
+    padding: 20px 19px 24px 0
 
   .about-numbers__box h3
     margin: 0 0 10px
+    padding: 0 0 0 19px
 
   .about-numbers__box.bg-yellow:before, .about-numbers__box.bg-yellow:after, .about-numbers__box.bg-violet:before
     display: none
 
   .about-numbers__box-slider
     max-width: none
-
     p
       margin: 0
 
     .slick-dots
       margin: 18px 0 0
+      padding: 0 0 0 19px
+
+  .about-numbers__box-slider-item
+    margin: 0 0 0 19px
 
   .about-numbers
     margin: 0 0 17px

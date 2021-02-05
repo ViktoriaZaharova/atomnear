@@ -64,7 +64,7 @@ body {
   line-height: normal;
   font-family: "Rubik", sans-serif;
   font-weight: normal;
-  background: #22223c;
+  background: #24223f;
   color: #fff; }
 
 html, body {
@@ -395,7 +395,7 @@ header .logo {
 
 .fullscreen-bg__video {
   position: absolute;
-  left: 50%;
+  left: 49.7%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -412,7 +412,7 @@ header .logo {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: absolute;
-  left: 520px;
+  left: 50%;
   top: 50%;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
@@ -519,7 +519,10 @@ header .logo {
   padding: 0; }
 
 .about-numbers__box-max {
-  width: 50%; }
+  width: 50%;
+  padding: 38px 10px 30px 0; }
+  .about-numbers__box-max h3 {
+    padding: 0 0 0 54px; }
 
 .about-numbers__box.bg-violet:before {
   content: '';
@@ -556,6 +559,11 @@ header .logo {
     margin: 0; }
   .about-numbers__box-slider .slick-dots {
     margin: 25px 0 0; }
+  .about-numbers__box-slider .slick-dots {
+    padding: 0 0 0 54px; }
+
+.about-numbers__box-slider-item {
+  margin: 0 0 0 54px; }
 
 .about-numbers__box-slider-links {
   color: #201F37;
@@ -1734,11 +1742,6 @@ footer .container {
 .loading-box {
   cursor: auto; }
 
-/*==========  Desktop First  ==========*/
-/* Large Devices, Wide Screens */
-@media only screen and (max-width: 1200px) {
-  /**/ }
-
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   .header-box {
@@ -1775,9 +1778,6 @@ footer .container {
   .contests-box-reward .points {
     font-size: 40px; }
   .btn-video {
-    left: 64%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
     font-size: 15px; }
   .score-box {
     min-height: 308px; } }
@@ -1983,9 +1983,10 @@ footer .container {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    padding: 20px 19px 24px; }
+    padding: 20px 19px 24px 0; }
   .about-numbers__box h3 {
-    margin: 0 0 10px; }
+    margin: 0 0 10px;
+    padding: 0 0 0 19px; }
   .about-numbers__box.bg-yellow:before, .about-numbers__box.bg-yellow:after, .about-numbers__box.bg-violet:before {
     display: none; }
   .about-numbers__box-slider {
@@ -1993,7 +1994,10 @@ footer .container {
     .about-numbers__box-slider p {
       margin: 0; }
     .about-numbers__box-slider .slick-dots {
-      margin: 18px 0 0; }
+      margin: 18px 0 0;
+      padding: 0 0 0 19px; }
+  .about-numbers__box-slider-item {
+    margin: 0 0 0 19px; }
   .about-numbers {
     margin: 0 0 17px; }
   .contests-box {
