@@ -1,7 +1,9 @@
 $('.about-numbers__box-slider').slick({
     slidesToShow: 1,
     arrows: false,
-    dots: true
+    dots: true,
+    autoplay: true,
+    fade: true
 });
 
 // tabs

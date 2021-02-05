@@ -64,7 +64,7 @@ body {
   line-height: normal;
   font-family: "Rubik", sans-serif;
   font-weight: normal;
-  background: #201F37;
+  background: #22223c;
   color: #fff; }
 
 html, body {
@@ -403,13 +403,59 @@ header .logo {
   height: auto; }
 
 .btn-video {
-  display: none; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: absolute;
+  left: 520px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  max-width: none;
+  letter-spacing: 0;
+  text-align: left;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: auto; }
+
+.btn-video-icon {
+  width: 72px;
+  height: 72px;
+  background: #BD2BB3;
+  margin: 0 16px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .btn-video-icon .svg-icon {
+    fill: #fff;
+    width: 28px;
+    height: 28px; }
+
+.btn-video-text {
+  max-width: 144px; }
 
 .main-home__content {
   max-width: 500px;
   width: 100%;
   padding: 50px 60px 55px;
-  background: #0046E3;
   min-height: 480px;
   color: #fff;
   font-family: "Roboto", sans-serif; }
@@ -507,12 +553,17 @@ header .logo {
   .about-numbers__box-slider p {
     text-transform: none;
     letter-spacing: 0;
-    font-size: 16px;
-    font-family: "Rubik", sans-serif;
-    line-height: 130%;
     margin: 0; }
   .about-numbers__box-slider .slick-dots {
     margin: 25px 0 0; }
+
+.about-numbers__box-slider-links {
+  color: #201F37;
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+  line-height: 130%;
+  font-weight: bold;
+  cursor: pointer; }
 
 .slick-slide {
   outline: none; }
@@ -604,11 +655,11 @@ header .logo {
   overflow: hidden;
   color: #fff;
   cursor: pointer;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
   margin: 0 0 -1px; }
   .contests-box:hover .contests-box__bg {
-    display: block; }
+    opacity: 0.25;
+    -webkit-transform: translate(-50%, -50%) scale(1.1);
+            transform: translate(-50%, -50%) scale(1.1); }
   .contests-box:hover .contests-box__icon {
     fill: #fff; }
   .contests-box .btn {
@@ -665,16 +716,15 @@ header .logo {
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  opacity: 0.25;
-  display: none;
-  -webkit-transition: .3s ease;
-  transition: .3s ease; }
+  opacity: 0;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease; }
 
 .links {
   text-transform: uppercase;
@@ -756,7 +806,10 @@ header .logo {
   top: 0;
   left: 0; }
   .score-box__img img {
-    max-height: 100%; }
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
 
 .score-box1 .score-box__img {
   max-width: 426px;
@@ -1697,7 +1750,8 @@ footer .container {
     margin: 0 20px 0 0; }
   .main-home__content {
     max-width: 400px;
-    padding: 30px; }
+    padding: 30px;
+    min-height: auto; }
     .main-home__content h1 {
       margin: 30px 0; }
   .btn {
@@ -1719,7 +1773,14 @@ footer .container {
   .contests-box-reward__body, .contests-box-instruction {
     padding: 30px; }
   .contests-box-reward .points {
-    font-size: 40px; } }
+    font-size: 40px; }
+  .btn-video {
+    left: 64%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-size: 15px; }
+  .score-box {
+    min-height: 308px; } }
 
 @media only screen and (max-width: 768px) {
   header .logo {
@@ -1745,7 +1806,22 @@ footer .container {
   .btn-video {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    position: relative;
+    -webkit-transform: none;
+            transform: none;
+    left: 0;
+    top: 0;
+    max-width: 335px;
+    width: 100%;
+    border: 1px solid #fff;
+    height: 55px;
+    text-align: center; }
+  .btn-video-text {
+    max-width: none;
+    width: 100%; }
+  .btn-video-icon {
+    display: none; }
   h1 {
     font-size: 25px; }
   h2 {
@@ -1753,7 +1829,8 @@ footer .container {
     margin: 0 0 13px; }
   .about-numbers__box {
     padding-left: 20px;
-    font-size: 13px; }
+    font-size: 13px;
+    line-height: 130%; }
     .about-numbers__box p {
       font-size: 20px; }
   .about-numbers__box-slider-item p {
@@ -1848,6 +1925,18 @@ footer .container {
   .mt-40 {
     margin-top: 20px; } }
 
+@media only screen and (max-width: 720px) {
+  .score-box {
+    width: 60%; }
+  .score .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; } }
+
 @media only screen and (max-width: 630px) {
   .header-box {
     background: transparent;
@@ -1879,11 +1968,11 @@ footer .container {
   .about-numbers__box {
     width: 50%;
     min-height: auto;
-    padding: 15px 19px 13px; }
+    padding: 16px 19px 18px; }
     .about-numbers__box span {
       max-width: 148px; }
     .about-numbers__box p {
-      margin: 0 0 5px; }
+      margin: 0 0 10px; }
     .about-numbers__box .btn-black {
       margin: 20px auto;
       max-width: 335px; }
@@ -1893,7 +1982,10 @@ footer .container {
     width: 100%;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
-            order: 1; }
+            order: 1;
+    padding: 20px 19px 24px; }
+  .about-numbers__box h3 {
+    margin: 0 0 10px; }
   .about-numbers__box.bg-yellow:before, .about-numbers__box.bg-yellow:after, .about-numbers__box.bg-violet:before {
     display: none; }
   .about-numbers__box-slider {
@@ -1921,6 +2013,7 @@ footer .container {
   .score-box {
     display: none;
     width: 100%;
+    max-width: 375px;
     margin: 0; }
     .score-box:nth-child(1), .score-box:nth-child(2) {
       display: -webkit-box;
@@ -2105,7 +2198,3 @@ footer .container {
     font-size: 13px; }
   .modal__div2 .modal__body-content {
     padding: 30px 20px; } }
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width: 320px) {
-  /**/ }

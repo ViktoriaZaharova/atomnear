@@ -22,6 +22,7 @@
   .main-home__content
     max-width: 400px
     padding: 30px
+    min-height: auto
 
     h1
       margin: 30px 0
@@ -58,7 +59,13 @@
   .contests-box-reward .points
     font-size: 40px
 
+  .btn-video
+    left: 64%
+    transform: translate(-50%,-50%)
+    font-size: 15px
 
+  .score-box
+    min-height: 308px
 
 @media only screen and (max-width: 768px)
   header
@@ -92,6 +99,22 @@
 
   .btn-video
     display: flex
+    position: relative
+    transform: none
+    left: 0
+    top: 0
+    max-width: 335px
+    width: 100%
+    border: 1px solid #fff
+    height: 55px
+    text-align: center
+
+  .btn-video-text
+    max-width: none
+    width: 100%
+
+  .btn-video-icon
+    display: none
 
   h1
     font-size: 25px
@@ -103,7 +126,7 @@
   .about-numbers__box
     padding-left: 20px
     font-size: 13px
-
+    line-height: 130%
     p
       font-size: 20px
 
@@ -239,6 +262,14 @@
   .mt-40
     margin-top: 20px
 
+@media only screen and (max-width: 720px)
+  .score-box
+    width: 60%
+
+  .score .row
+    flex-direction: column
+    align-items: center
+
 @media only screen and (max-width: 630px)
   .header-box
     background: transparent
@@ -282,13 +313,13 @@
   .about-numbers__box
     width: 50%
     min-height: auto
-    padding: 15px 19px 13px
+    padding: 16px 19px 18px
 
     span
       max-width: 148px
 
     p
-      margin: 0 0 5px
+      margin: 0 0 10px
 
     .btn-black
       margin: 20px auto
@@ -301,6 +332,10 @@
   .about-numbers__box-max
     width: 100%
     order: 1
+    padding: 20px 19px 24px
+
+  .about-numbers__box h3
+    margin: 0 0 10px
 
   .about-numbers__box.bg-yellow:before, .about-numbers__box.bg-yellow:after, .about-numbers__box.bg-violet:before
     display: none
@@ -336,6 +371,7 @@
   .score-box
     display: none
     width: 100%
+    max-width: 375px
     margin: 0
 
     &:nth-child(1), &:nth-child(2)
@@ -567,6 +603,3 @@
     padding: 30px 20px
 
 
-/* Custom, iPhone Retina */
-@media only screen and (max-width: 320px)
-  /**/
