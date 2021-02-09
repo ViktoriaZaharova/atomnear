@@ -99,3 +99,28 @@ $(document).on('click', function (e) {
         );
     }
 });
+
+// активная ссылка меню
+$('.cabinet-menu li a').each(function () {
+    let location = window.location.href;
+    let link = this.href;
+    if (location === link) {
+        $(this).addClass('active');
+    }
+});
+// end
+
+// accordeon
+function accordeon() {
+    var panel = $('.panel_heading');
+
+    if (panel.hasClass('in')) {
+        $('.in').find('.block_hover').slideDown();
+    }
+
+    $('.panel_heading .block_title').on('click', function () {
+        $(this).parent().toggleClass('in').find('.block_hover').slideToggle();
+    });
+}
+
+accordeon();

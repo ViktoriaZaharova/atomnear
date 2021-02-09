@@ -39,7 +39,7 @@
     <ul class="menu">
       <li><a href="competition.html">КОНКУРСЫ</a></li>
       <li><a href="score.html">МАГАЗИН ПРИЗОВ</a></li>
-      <li><a href="#about" class="go_to">О ПРОЕКТЕ</a></li>
+      <li><a href="index.html#about" class="go_to">О ПРОЕКТЕ</a></li>
     </ul>
   </div>
 </div>
@@ -71,69 +71,57 @@
 </header>
 
 
-<section class="competition-page">
+<!--section question-->
+<div class="cabinet">
   <div class="container">
-    <a href="#" class="title-links">Конкурсы</a>
-    <div class="row">
-      <div class="competition-page__img"><img src="img/question.jpeg" alt=""></div>
 
-      <div class="contests-box contests-box-last">
-        <div class="line">
-          <p class="number-contests">КОНКУРС №2</p>
-          <div class="contests-box__icon">
-            <svg class="svg-icon">
-              <use xlink:href="img/sprite.svg#static-icon"></use>
-            </svg>
+    <div class="cabinet-content">
+      <div class="sidebar">
+        <a href="#" class="links-next">Вернуться назад</a>
+      </div>
+
+      <div class="cabinet-wrapper">
+        <h1>РЕДАКТИРОВАНИЕ ПРОФИЛЯ</h1>
+
+        <form method="post" class="form-profile">
+          <div class="form-box">
+            <label>
+              <span class="input-title">Имя</span>
+              <input type="text" placeholder="Константин" name="name">
+            </label>
+            <label>
+              <span class="input-title">Фамилия</span>
+              <input type="text" placeholder="Константинопольский" name="first_name">
+            </label>
+            <label>
+              <span class="input-title">E-mail</span>
+              <input type="text" placeholder="konst.konstantinopolsky@gmail.com" name="mail" required>
+            </label>
+            <label>
+              <span class="input-title">Город</span>
+              <input type="text" placeholder="Москва" name="city">
+            </label>
           </div>
-        </div>
-        <h3>пройди тест про обогащение урана — и мы обогатим тебя на 50 баллов (потрать их на крутой мерч!)</h3>
-        <img src="img/video-poster.png" alt="" class="contests-box__img">
+
+          <div class="form-box form-box-last">
+            <label>
+              <span class="input-title">Адрес доставки</span>
+              <input type="text" class="color-grey" placeholder="Индекс, город, улица, дом, квартира" name="address">
+            </label>
+            <label>
+              <span class="input-title">Моб. телефон</span>
+              <input type="text" class="color-grey" placeholder="+7 000 000-00-00" name="phone" required>
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-blue">ИЗМЕНИТЬ ПРОФИЛЬ</button>
+        </form>
       </div>
-
-      <div class="contests-box-instruction">
-        <h3>Что нужно сделать</h3>
-        <ul class="list-checkbox">
-          <li>Пройди тест из 10 вопросов про обогащение урана</li>
-          <li>Каждое следующее прохождение теста будет приносить в два раз меньше баллов</li>
-          <li>Заработай до 50 баллов, ответив верно на все вопросы, и потрать их в <a href="#"
-                                                                                                  class="links-blue link-inline text-decoration">магазине
-            призов</a></li>
-        </ul>
-      </div>
-
-      <div class="contests-box-reward">
-        <div class="contests-box-reward__body">
-          <div class="points">50 баллов</div>
-          <p>ты получишь за успешное выполнение задания!</p>
-        </div>
-
-        <a href="#" class="btn btn-performance">ВЫПОЛНЕНИЕ ЗАДАНИЯ</a>
-      </div>
-
-      <div class="test-box-result mt-40">
-        <h3>ТЕСТ ПРОЙДЕН</h3>
-        <div class="box-text">
-          <p>Количество попыток прохождения теста неограничено, но каждая новая попытка будет приносить вам на 50%
-            меньше баллов. Чтобы заработать максимум баллов, нужно правильно ответить на все вопросы с первой попытки!
-            Будет защитан максимальный балл из всех попыток.</p>
-        </div>
-
-        <div class="test-box-result__date">
-          <p>Попытка №1 – 27.01.2021 14:37</p>
-          <div class="points">35 баллов</div>
-        </div>
-
-        <a href="#" class="btn btn-blue">Пройти ещё раз</a>
-      </div>
-
-      <form method="post" class="form-moderation">
-
-        <button class="btn btn-blue" type="button">ЗАВЕРШИТЬ И ПОЛУЧИТЬ БАЛЛЫ</button>
-      </form>
     </div>
-  </div>
-</section>
 
+
+  </div>
+</div>
 
 <footer>
   <div class="container">
@@ -144,7 +132,7 @@
       <div class="footer-wrapper w-100">
         <div class="wrapper">
           <ul class="footer-menu">
-            <li><a href="#about" class="go_to">О проекте</a></li>
+            <li><a href="index.html#about" class="go_to">О проекте</a></li>
             <li><a href="#">Правила сайта</a></li>
             <li><a href="#">Политика конфиденциальности</a></li>
           </ul>

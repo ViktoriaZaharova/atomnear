@@ -57,7 +57,44 @@
     font-size: 15px
 
   .score-box
-    min-height: 308px
+    min-height: auto
+    position: relative
+    padding-top: calc(40% - 58px)
+
+
+
+  .cabinet-user__info
+    margin: 0 auto 0 0
+
+  .cabinet-user__info
+    max-width: 250px
+    
+  .contest-box__result
+    max-width: 230px
+    font-size: 10px
+    br
+      display: none
+
+  .footer-wrapper:before, .about-title:before
+    width: 100%
+
+  .about-title
+    padding: 60px 20px 0
+
+@media only screen and (max-width: 880px)
+  .contests-box__footer .points
+    width: 100%
+    order: -1
+    margin: 0 auto 10px
+    text-align: center
+
+  .table
+    padding: 30px
+
+@media only screen and (max-width: 810px)
+  .cabinet-user__info
+    max-width: none
+    margin: 0 0 20px
 
 @media only screen and (max-width: 768px)
   header
@@ -153,30 +190,9 @@
     margin: 0 0 20px
 
   .score-box
-    min-height: 308px
-    padding: 23px 0 0
-
     h3
       font-size: 20px
       max-width: 155px
-
-  .score-box1
-    .score-box__img
-      max-width: 328px
-
-    h3
-      margin: 0 40px 0 auto
-
-  .score-box2 .score-box__img
-    max-width: 253px
-
-  .score-box3
-    h3
-      margin: 0 20px 0 auto
-      max-width: 130px
-
-  .score-box5 h3
-    margin: 0 0 0 20px
 
   .news
     margin: 29px 0 40px
@@ -189,7 +205,7 @@
     width: calc(100% - 200px)
 
   .about-title
-    padding: 30px 30px 0 0
+    padding: 30px 30px 0
     width: 200px
 
   .footer-bg-box
@@ -254,13 +270,44 @@
   .mt-40
     margin-top: 20px
 
+  .form-profile
+    padding: 30px 30px 0
+    button
+      margin: 0 0 -1px -31px
+
+  .cabinet h1
+    font-size: 28px
+
+  .contests-box-cabinet
+    width: 100%
+
+  .block_title
+    padding: 25px
+
+  .block_hover
+    padding: 0 25px 25px
+
+  .order-box__body
+    padding: 0 0 0 20px
+
+
 @media only screen and (max-width: 720px)
   .score-box
     width: 60%
+    padding-top: 40%
 
   .score .row
     flex-direction: column
     align-items: center
+
+  .contest-box__result
+    max-width: none
+    margin: 0 auto 10px
+    text-align: center
+
+  .contests-box-cabinet
+    .btn
+      order: 1
 
 @media only screen and (max-width: 630px)
   .header-box
@@ -299,13 +346,45 @@
   .header-box
     width: auto
 
+  .sidebar
+    width: 100%
+    margin: 0 0 30px
+
+  .cabinet-wrapper
+    width: 100%
+
+  .cabinet h1
+    margin: 0 0 20px
+    font-size: 24px
+
+  .cabinet
+    margin: 20px 0 40px
+
+  .cabinet-title
+    padding: 0
+    text-align: center
+    margin: 0 auto 20px
+
+  .appeal-total
+    padding: 20px
+    h3
+      font-size: 16px
+
+  .appeal
+    font-size: 14px
+    padding: 20px
+
+  .cabinet-title
+    margin: 0
+
+
 
 
 @media only screen and (max-width: 575px)
   .about-numbers__box
     width: 50%
     min-height: auto
-    padding: 16px 19px 18px
+    padding: 16px 20px 18px
 
     span
       max-width: 148px
@@ -324,26 +403,27 @@
   .about-numbers__box-max
     width: 100%
     order: 1
-    padding: 20px 19px 24px 0
+    padding: 23px 0 25px
 
   .about-numbers__box h3
-    margin: 0 0 10px
+    margin: 0 0 15px
     padding: 0 0 0 19px
 
   .about-numbers__box.bg-yellow:before, .about-numbers__box.bg-yellow:after, .about-numbers__box.bg-violet:before
     display: none
 
   .about-numbers__box-slider
-    max-width: none
     p
       margin: 0
 
+
     .slick-dots
       margin: 18px 0 0
-      padding: 0 0 0 19px
+      padding: 0 0 0 20px
 
   .about-numbers__box-slider-item
-    margin: 0 0 0 19px
+    margin: 0 0 0 20px
+    max-width: 324px
 
   .about-numbers
     margin: 0 0 17px
@@ -369,7 +449,7 @@
     width: 100%
     max-width: 375px
     margin: 0
-
+    padding-top: 60%
     &:nth-child(1), &:nth-child(2)
       display: flex
 
@@ -379,10 +459,6 @@
 
     .btn
       display: none
-
-  .score-box1
-    h3
-      margin: 0 40px 0 auto
 
   .score
     .container
@@ -483,6 +559,10 @@
       font-size: 20px
       margin: 0 0 13px
 
+  .title-links
+    font-size: 20px
+    margin: 0 0 13px
+
   .other-competitions
     .contests-box
       display: none
@@ -545,6 +625,53 @@
   .file-result
     margin: 9px 0 0
 
+  .cabinet-user__photo
+    width: 100%
+    margin: 0 auto 20px
+    justify-content: center
+    align-items: center
+    display: flex
+    &:before
+      left: 50%
+      transform: translate(-50%,0) rotate(-180deg)
+
+  .cabinet-user__body
+    width: 100%
+    h3
+      text-align: center
+    .btn
+      margin: 0 auto
+
+  .cabinet-user
+    margin: 20px 0 40px
+
+  .points-item
+    margin: 0
+    font-size: 40px
+
+  .points-list
+    justify-content: space-between
+
+  .contests-box-cabinet
+    display: flex
+
+  .account-balance
+    min-width: 700px
+
+  .block_title:after
+    width: 10px
+    min-width: 10px
+    height: 22px
+
+  .order-box__img
+    width: 60px
+    height: 60px
+
+  .order-box__body
+    width: calc(100% - 60px)
+
+  .order-box
+    margin: 0 0 25px
 
 @media only screen and (max-width: 480px)
   .footer-menu
@@ -599,3 +726,17 @@
     padding: 30px 20px
 
 
+  .form-profile
+    .input-title
+      width: 100%
+      margin: 0 0 5px
+      font-size: 14px
+    input
+      width: 100%
+
+  .score-box
+    padding-top: 75%
+
+@media (max-width: 375px)
+  .score-box
+    padding-top: 80%
