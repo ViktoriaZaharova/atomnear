@@ -5,6 +5,20 @@ $('.about-numbers__box-slider').slick({
     autoplay: true,
 });
 
+$('.product-slider-max').slick({
+    slidesToShow: 1,
+    asNavFor: '.product-slider-min',
+    fade: true
+});
+
+$('.product-slider-min').slick({
+    slidesToShow: 4,
+    asNavFor: '.product-slider-max',
+    focusOnSelect: true,
+    arrows: false,
+    variableWidth: true
+});
+
 // tabs
 $('ul.tabs__caption').on('click', 'li:not(.active)', function () {
     $(this)
@@ -20,6 +34,21 @@ $('.go_to').click(function () {
             scrollTop: $(scroll_el).offset().top
         }, 500);
     }
+    return false;
+});
+
+$('.down').on("click", function () {
+    let $input = $(this).parent().find('input');
+    let count = parseInt($input.val()) - 1;
+    count = count < 1 ? 1 : count;
+    $input.val(count);
+    $input.change();
+    return false;
+});
+$('.up').on("click",function () {
+    let $input = $(this).parent().find('input');
+    $input.val(parseInt($input.val()) + 1);
+    $input.change();
     return false;
 });
 

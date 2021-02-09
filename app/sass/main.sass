@@ -258,6 +258,15 @@ label
   background: #F5CB48
   color: $text
 
+.btn-grey
+  background: #CBCBCB
+  color: #201F37
+  &:hover
+    background: $blue
+    color: #fff
+    .svg-icon
+      fill: #fff
+
 h1
   font-size: 30px
   font-weight: 300
@@ -2047,6 +2056,411 @@ footer
 
   .block_hover
     background: #F0F0F0
+
+//page score
+.header-score
+  background: #0046E3
+  .header-box
+    background: transparent
+    a
+      color: #fff
+  .links-cabinet .svg-icon
+    fill: #fff
+
+.main-score
+  background: #0046E3
+  h1
+    text-transform: uppercase
+    text-align: center
+    width: 100%
+    letter-spacing: 0.9em
+    font-size: 80px
+    font-weight: 200
+    line-height: 100%
+    font-family: $roboto
+    margin: 0 auto
+    position: absolute
+    left: 55%
+    top: 0
+    transform: translate(-50%,0)
+
+.main-score-img
+  width: 1077px
+  position: relative
+  z-index: 1
+  margin: -55px 0 0
+
+.box-text-subtitle
+  text-align: center
+  margin: 31px auto
+  font-size: 27px
+  font-weight: 300
+  a
+    display: inline
+
+.score-page
+  margin: 0 0 100px
+
+//.catalog
+.catalog
+  margin: 28px 0 65px
+  h1
+    width: fit-content
+  .row
+    justify-content: space-between
+
+.button-group
+  display: flex
+  align-items: center
+  .btn
+    height: 40px
+    min-width: 162px
+    max-width: 162px
+    width: 100%
+    font-size: 13px
+    font-weight: 500
+    justify-content: flex-start
+    padding: 0 0 0 20px
+    text-transform: uppercase
+    letter-spacing: 0.1em
+  .svg-icon
+    margin: 0 4px 0 0
+    width: 20px
+    height: 20px
+
+.btn-basket
+  .svg-icon
+    fill: #201F37
+
+.btn-basket.color-white
+  .svg-icon
+    fill: #fff
+  &:hover
+    color: $blue
+    .svg-icon
+      fill: $blue
+
+.btn-points
+  .svg-icon
+    fill: #fff
+  &:hover
+    .svg-icon
+      fill: $blue
+
+.list-sorting
+  width: 100%
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  margin: 21px 0
+  letter-spacing: 0.14em
+  font-size: 14px
+  li
+    margin: 0 0 10px
+
+    a
+      color: #fff
+      padding: 12px
+      text-transform: uppercase
+      text-decoration: underline
+      &:hover
+        color: $blue
+    .active
+      background: #fff
+      color: #201F37
+      text-decoration: none
+
+.product-card
+  margin: 0 0 50px
+  width: 31.3%
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  p
+    font-size: 12px
+    font-family: $roboto
+    color: #F0F0F0
+    margin: 12px 0 11px
+  .points
+    margin: 0
+
+.product-card__img
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 313px
+  overflow: hidden
+  padding: 30px 0 0
+  background: #FFFFFF
+  img
+    max-height: 100%
+
+.product-card__body
+  width: 100%
+  padding: 13px 0 0
+
+.product-card__name
+  letter-spacing: 0.05em
+  font-size: 19px
+  color: #fff
+  font-weight: 900
+  text-transform: uppercase
+
+.product-card.active
+  .product-card__img
+    background: $blue
+
+//product page
+.product
+  margin: 28px 0 109px
+  .links-next
+    font-size: 13px
+    margin: 20px 0 36px
+    letter-spacing: 0.14em
+
+.product-section
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+
+.product-slider
+  width: 500px
+
+
+.product-slider-max
+  width: 100%
+  margin: 0 0 20px
+
+.slick-arrow
+  width: 30px
+  height: 30px
+  opacity: 1
+  z-index: 1
+  &:before
+    display: none
+  &:hover, &:focus
+    opacity: 1
+
+
+.slick-next
+  right: 19px
+  background: url("../img/next.svg") no-repeat center
+    size: cover
+  &:hover, &:focus
+    background: url("../img/next.svg") no-repeat center
+      size: cover
+
+.slick-prev
+  left: 19px
+  background: url("../img/prev.svg") no-repeat center
+    size: cover
+  &:hover, &:focus
+    background: url("../img/prev.svg") no-repeat center
+      size: cover
+
+.product-photo
+  width: 100%
+  background: #fff
+  display: flex
+  align-items: flex-start
+  justify-content: center
+  height: 500px
+  img
+    margin: auto
+
+.product-slider-preview
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 80px
+  height: 80px
+  background: #fff
+  margin: 0 20px 0 0
+  cursor: pointer
+  img
+    width: 100%
+    height: 100%
+    max-width: none
+    object-fit: cover
+
+.product-slider-min
+  width: 100%
+  .slick-current
+    .product-slider-preview
+      border: 5px solid $blue
+
+.product-information
+  width: calc(100% - 500px)
+  padding: 0 0 0 55px
+  h3
+    font-size: 28px
+    font-weight: 900
+    letter-spacing: 0.05em
+    text-transform: uppercase
+    margin: 0 0 17px
+  .box-text
+    font-size: 15px
+    font-family: $roboto
+    color: #F0F0F0
+  .points
+    margin: 0
+
+.size-box
+  margin: 30px 0
+  color: #F0F0F0
+  font-size: 15px
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+
+.select
+  cursor: pointer
+  font-size: 15px
+  font-family: $roboto
+  color: #201F37
+  padding: 0 30px 0 15px
+  margin: 10px 0 0
+  height: 40px
+  max-width: 215px
+  background: #FFFFFF url("../img/arrow-select.svg") 94% center no-repeat
+    size: 15px
+
+.btn-add-basket
+  max-width: 445px
+  margin: 25px 0 0
+
+//basket
+.basket
+  margin: 28px 0 84px
+
+.basket-wrapper
+  h3
+    width: 100%
+    margin: 0 0 16px
+    font-size: 15px
+    font-weight: bold
+    font-family: $roboto
+
+.basket-box
+  margin: 0 0 20px
+  border: 1px solid #F0F0F0
+  width: 100%
+  background: #E5E5E5
+  padding: 23px 30px 43px 34px
+  color: #201F37
+  &:last-child
+    margin: 0
+
+
+.btn-delete-card
+  width: 20px
+  height: 20px
+  fill: #FF3D60
+
+.basket-item-product
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 0 15px
+  padding: 0 0 15px
+  border-bottom: 1px solid #CBCBCB
+  color: #201F37
+
+
+.points-val
+  font-weight: bold
+  font-family: $roboto
+  width: 250px
+  text-align: center
+
+.amount
+  display: flex
+  align-items: center
+  justify-content: center
+  input
+    width: 35px
+    border: none
+    text-align: center
+    padding: 0
+    background: transparent
+    color: #201F37
+    font-weight: bold
+    font-family: $roboto
+    &::placeholder
+      color: #201F37
+  span
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 20px
+    height: 20px
+    cursor: pointer
+    fill: #201F37
+
+
+.basket-total
+  width: 100%
+  text-align: right
+  font-size: 20px
+  font-weight: bold
+  font-family: $roboto
+  a
+    display: inline
+
+.basket-item-product__img
+  width: 100px
+  height: 100px
+  display: flex
+  align-items: center
+  justify-content: center
+  background: #fff
+  padding: 20px 0 0
+  img
+    max-height: 100%
+
+.basket-item-product__body
+  width: calc(100% - 100px)
+  padding: 0 0 0 35px
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  .list-characteristics
+    margin: 0 auto 0 0
+
+.form-basket
+  padding: 25px 36px 0
+  .form-box
+    max-width: 698px
+  button
+    margin: 32px 0 -1px -37px
+    max-width: 227px
+
+.basket-box-message
+  padding: 43px 20px 49px
+  h3, p
+    font-weight: bold
+    text-align: center
+    font-size: 15px
+    font-family: $roboto
+  .box-text
+    max-width: 400px
+    width: 100%
+    margin: 0 auto
+    font-size: 15px
+    font-weight: bold
+  h3
+    margin: 0 auto
+  .btn
+    height: 40px
+    letter-spacing: 0
+    text-transform: none
+    font-weight: normal
+    margin: 30px auto 0
+    max-width: 213px
+
+
 
 
 @import "media"
