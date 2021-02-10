@@ -2,6 +2,10 @@
 
 
 /* Medium Devices, Desktops */
+@media only screen and (max-width: 1100px)
+  .list-sorting
+    letter-spacing: 0.08em
+
 @media only screen and (max-width: 992px)
   .header-box
     padding: 20px
@@ -29,11 +33,11 @@
     margin: 0
 
   .contests-box
-    h3
+    h3, .contests-box-cabinet__title
       font-size: 16px
 
   .contests-box-max
-    h3
+    h3, .contests-box-cabinet__title
       font-size: 24px
 
   .footer-wrapper
@@ -62,7 +66,6 @@
     padding-top: calc(40% - 58px)
 
 
-
   .cabinet-user__info
     margin: 0 auto 0 0
 
@@ -72,8 +75,7 @@
   .contest-box__result
     max-width: 230px
     font-size: 10px
-    br
-      display: none
+
 
   .footer-wrapper:before, .about-title:before
     width: 100%
@@ -93,6 +95,12 @@
   .points-val
     width: 100px
 
+  .list-sorting
+    letter-spacing: 0.02em
+    li
+      a
+        padding: 12px 10px
+
 @media only screen and (max-width: 880px)
   .contests-box__footer .points
     width: 100%
@@ -108,10 +116,15 @@
 
   .product-photo
     height: 400px
+    padding: 20px
 
   .product-information
     width: calc(100% - 400px)
     padding: 0 0 0 30px
+
+  .product
+    h1
+      letter-spacing: .07em
 
 @media only screen and (max-width: 810px)
   .cabinet-user__info
@@ -134,7 +147,7 @@
 
     .btn
       max-width: 335px
-      margin: 0 auto
+      margin: 0
 
     h1
       margin: 17px 0 129px
@@ -196,7 +209,7 @@
   .points
     margin: auto 0 20px
 
-  .contests-box-max h3
+  .contests-box-max h3, .contests-box-cabinet__title
     font-size: 18px
 
   .links
@@ -295,7 +308,7 @@
   .form-profile
     padding: 30px 30px 0
     button
-      margin: 0 0 -1px -31px
+      margin: 30px 0 -1px -31px
 
   .cabinet h1
     font-size: 28px
@@ -478,7 +491,7 @@
       margin: 0 0 10px
 
     .btn-black
-      margin: 20px auto
+      margin: 20px 0 20px 20px
       max-width: 335px
 
   .about-numbers
@@ -500,8 +513,6 @@
   .about-numbers__box-slider
     p
       margin: 0
-
-
     .slick-dots
       margin: 18px 0 0
       padding: 0 0 0 20px
@@ -515,18 +526,27 @@
 
   .contests-box
     width: 100%
-    min-height: 335px
+    min-height: auto
+    //min-height: 335px
     display: none
-    h3
+    h3, .contests-box-cabinet__title
       margin: 0 0 47px
       font-size: 18px
       text-transform: none
+    .btn
+      margin: 25px auto 21px
+      max-width: none
+    .points
+      margin: 0
 
     &:nth-child(1), &:nth-child(2), &:last-child
       display: flex
 
+  .contests-box-last
+    min-height: 335px
+
   .contests-box-max
-    h3
+    h3, .contests-box-cabinet__title
       margin: 0 0 68px
 
   .score-box
@@ -765,6 +785,7 @@
     margin: 20px auto
     font-size: 18px
 
+
 @media only screen and (max-width: 480px)
   .footer-menu
     width: 100%
@@ -853,6 +874,7 @@
 
   .product-photo
     height: 300px
+    padding: 10px
 
   .basket-item-product__img
     margin: 0 auto
@@ -871,3 +893,7 @@
 @media (max-width: 375px)
   .score-box
     padding-top: 80%
+
+  .about-numbers__box
+    .btn-black
+      max-width: calc(100% - 40px)

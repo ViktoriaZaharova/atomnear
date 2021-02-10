@@ -14,28 +14,28 @@
     box-sizing: border-box
 
 *::-webkit-input-placeholder
-  color: #666
+  color: #000
   opacity: 1
 
 *:-moz-placeholder
-  color: #666
+  color: #000
   opacity: 1
 
 *::-moz-placeholder
-  color: #666
+  color: #000
   opacity: 1
 
 *:-ms-input-placeholder
-  color: #666
+  color: #000
   opacity: 1
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
-  color: #666
+  color: #000
 
 body input:required:valid,
 body textarea:required:valid
-  color: #666
+  color: #000
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
   margin: 0
@@ -102,7 +102,7 @@ input, textarea, select
   font-family: $roboto
   width: 100%
   font-size: 15px
-  color: #201F37
+  color: #000
   border: none
 
   &::placeholder
@@ -190,8 +190,7 @@ label
   font-weight: 500
   font-family: $roboto
 
-.btn:disabled
-  background: #C4C4C4
+
 
 .btn-white
   background: #fff
@@ -266,6 +265,14 @@ label
     color: #fff
     .svg-icon
       fill: #fff
+
+
+.btn:disabled
+  background: #C4C4C4
+  &:hover
+    background: #C4C4C4
+    color: #fff
+
 
 h1
   font-size: 30px
@@ -613,14 +620,15 @@ header
 
     .contests-box__icon
       fill: #fff
-
+    .contests-box-cabinet__title
+      text-decoration: underline
   .btn
     margin: 0 0 0 -30px
 
   > *:not(.contests-box__bg, .contests-box__img)
     position: relative
 
-  h3
+  h3, .contests-box-cabinet__title
     text-transform: uppercase
     margin: 0 0 50px
     font-size: 19px
@@ -641,6 +649,9 @@ header
     li
       .svg-icon
         fill: #fff
+
+.contests-box-cabinet__title
+  color: #fff
 
 .number-contests
   font-size: 12px
@@ -1283,10 +1294,15 @@ footer
 
 .question-box__img
   margin: 29px auto 0
+  max-height: 335px
+  overflow: hidden
+  height: 100%
   @include display-center-center
 
   img
     width: 100%
+    height: 100%
+    object-fit: cover
 
 .question-box-number
   font-family: $roboto
@@ -1672,8 +1688,10 @@ footer
 
 .links-next
   color: #fff
-  text-decoration: underline
+  //text-decoration: underline
   font-size: 15px
+  width: fit-content
+  border-bottom: 1px solid #fff
 
 .sidebar
   width: 200px
@@ -1683,15 +1701,16 @@ footer
 
 .form-profile
   width: 100%
-  border: 1px solid #F0F0F0
+
   background: #E5E5E5
   padding: 45px 50px 0
   color: #201F37
   font-size: 15px
   font-family: $roboto
+  position: relative
 
   button
-    margin: 52px 0 -1px -51px
+    margin: 52px 0 0 -50px
     max-width: 283px
 
   label
@@ -1712,8 +1731,6 @@ footer
     padding: 0 15px
 
   .color-grey
-    color: #A5A5A5
-
     &::placeholder
       color: #A5A5A5
 
@@ -1888,7 +1905,7 @@ footer
     display: inline
 
 .appeal-total
-  padding: 25px 30px
+  padding: 27px 30px 23px
 
   h3
     text-transform: uppercase
@@ -1900,6 +1917,8 @@ footer
   max-width: none
   width: 100%
   min-height: 206px
+  color: #fff
+
 
 .contests-box__footer
   width: 100%
@@ -1979,7 +1998,7 @@ footer
   color: #201F37
   font-size: 15px
   font-family: $roboto
-  cursor: pointer
+
 
 .block_title
   width: 100%
@@ -1988,7 +2007,7 @@ footer
   justify-content: space-between
   padding: 29px 30px 32px 32px
   position: relative
-
+  cursor: pointer
   &:after
     content: ''
     display: inline-block
@@ -2143,6 +2162,7 @@ footer
 .btn-points
   .svg-icon
     fill: #fff
+    margin: 0 9px 0 0
   &:hover
     .svg-icon
       fill: $blue
@@ -2176,13 +2196,21 @@ footer
   display: flex
   flex-direction: column
   align-items: flex-start
-  p
-    font-size: 12px
-    font-family: $roboto
-    color: #F0F0F0
-    margin: 12px 0 11px
+  color: #fff
   .points
     margin: 0
+  &:hover
+    .product-card__img
+      background: $blue
+    .product-card__name
+      text-decoration: underline
+
+.product-card__text
+  font-size: 12px
+  font-family: $roboto
+  color: #F0F0F0
+  margin: 12px 0 11px
+  display: block
 
 .product-card__img
   width: 100%
@@ -2193,6 +2221,7 @@ footer
   overflow: hidden
   padding: 30px 0 0
   background: #FFFFFF
+  transition: .3s ease
   img
     max-height: 100%
 
@@ -2218,6 +2247,8 @@ footer
     font-size: 13px
     margin: 20px 0 36px
     letter-spacing: 0.14em
+  h1
+    letter-spacing: 0.1em
 
 .product-section
   display: flex
@@ -2266,6 +2297,7 @@ footer
   align-items: flex-start
   justify-content: center
   height: 500px
+  padding: 30px
   img
     margin: auto
 
@@ -2434,7 +2466,7 @@ footer
   .form-box
     max-width: 698px
   button
-    margin: 32px 0 -1px -37px
+    margin: 32px 0 0 -36px
     max-width: 227px
 
 .basket-box-message

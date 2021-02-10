@@ -8,7 +8,15 @@ $('.about-numbers__box-slider').slick({
 $('.product-slider-max').slick({
     slidesToShow: 1,
     asNavFor: '.product-slider-min',
-    fade: true
+    fade: true,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                infinite: true
+            }
+        }
+    ]
 });
 
 $('.product-slider-min').slick({
@@ -16,7 +24,15 @@ $('.product-slider-min').slick({
     asNavFor: '.product-slider-max',
     focusOnSelect: true,
     arrows: false,
-    variableWidth: true
+    variableWidth: true,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                infinite: true
+            }
+        }
+    ]
 });
 
 // tabs
@@ -51,6 +67,10 @@ $('.up').on("click",function () {
     $input.change();
     return false;
 });
+
+// mask phone
+$('[name="phone"]').mask('+7 999 999-99-99');
+
 
 // модальные окна (несколько)
 $(function () {
