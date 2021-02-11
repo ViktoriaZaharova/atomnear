@@ -1446,7 +1446,7 @@ footer .container {
     cursor: pointer;
     border: 1px solid #CBCBCB;
     padding: 13px 16px;
-    margin: 0 0 -1px;
+    margin: -1px 0 -1px 0;
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1805,6 +1805,8 @@ footer .container {
   width: -moz-fit-content;
   width: fit-content;
   border-bottom: 1px solid #fff; }
+  .links-next:hover {
+    border-color: transparent; }
 
 .sidebar {
   width: 200px; }
@@ -2554,7 +2556,7 @@ footer .container {
   height: 40px;
   max-width: 215px;
   background: #FFFFFF url("../img/arrow-select.svg") 94% center no-repeat;
-    background-size: 15px; }
+    background-size: 12px; }
 
 .btn-add-basket {
   max-width: 445px;
