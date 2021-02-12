@@ -6,6 +6,10 @@
   .list-sorting
     letter-spacing: 0.08em
 
+@media only screen and (max-width: 1030px)
+  .btn-video
+    left: calc(100% - 5px)
+
 @media only screen and (max-width: 992px)
   .header-box
     padding: 20px
@@ -21,13 +25,18 @@
     max-width: 400px
     padding: 30px
     min-height: auto
-
+    position: initial
+    &:before
+      display: none
     h1
       margin: 30px 0
 
   .btn
     height: 55px
     font-size: 14px
+
+  .btn-video
+    left: 50%
 
   header .logo
     margin: 0
@@ -478,6 +487,10 @@
     margin: 0 auto
     width: auto
 
+  .cabinet-menu
+    display: flex
+    flex-wrap: wrap
+
 @media only screen and (max-width: 575px)
   .about-numbers__box
     width: 50%
@@ -492,7 +505,7 @@
 
     .btn-black
       margin: 20px 0 20px 20px
-      max-width: 335px
+      max-width: calc(100% - 40px)
 
   .about-numbers
     .container
@@ -744,7 +757,10 @@
     width: 100%
     h3
       text-align: center
+      max-width: 300px
+      margin: 0 auto 20px
     .btn
+      max-width: none
       margin: 0 auto
 
   .cabinet-user
@@ -754,8 +770,22 @@
     margin: 0
     font-size: 40px
 
+  .points-wrapper
+    width: 100%
+
   .points-list
     justify-content: space-between
+    width: 100%
+
+  .points-links
+    width: 100%
+    justify-content: space-between
+    a
+      margin: 0
+      min-width: 133px
+
+
+
 
   .contests-box-cabinet
     display: flex
@@ -785,6 +815,8 @@
     margin: 20px auto
     font-size: 18px
 
+  .main-home .btn
+    max-width: none
 
 @media only screen and (max-width: 480px)
   .footer-menu
@@ -858,10 +890,13 @@
 
   .product-card
     width: 100%
+    max-width: 280px
+    margin: 0 auto 30px
 
   .product-card__img
     padding: 20px 0 0
-    height: 200px
+    height: 280px
+
 
   .button-group .btn
     min-width: auto

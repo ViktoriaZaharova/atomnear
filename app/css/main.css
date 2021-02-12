@@ -424,7 +424,7 @@ header .logo {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: absolute;
-  left: 50%;
+  left: 100%;
   top: 50%;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
@@ -468,9 +468,18 @@ header .logo {
   max-width: 500px;
   width: 100%;
   padding: 50px 60px 55px;
+  position: relative;
   min-height: 480px;
   color: #fff;
   font-family: "Roboto", sans-serif; }
+  .main-home__content:before {
+    content: '';
+    position: absolute;
+    right: 500px;
+    top: 0;
+    width: 1400px;
+    height: 100%;
+    background: #24223f; }
   .main-home__content h1 {
     margin: 70px 0; }
   .main-home__content h3 {
@@ -811,6 +820,8 @@ header .logo {
     font-size: 30px;
     font-weight: 900;
     max-width: 196px; }
+  .score-box:hover .btn {
+    background: #0046E3; }
 
 .score-box__body {
   display: -webkit-box;
@@ -2726,6 +2737,10 @@ footer .container {
   .list-sorting {
     letter-spacing: 0.08em; } }
 
+@media only screen and (max-width: 1030px) {
+  .btn-video {
+    left: calc(100% - 5px); } }
+
 @media only screen and (max-width: 992px) {
   .header-box {
     padding: 20px;
@@ -2737,12 +2752,17 @@ footer .container {
   .main-home__content {
     max-width: 400px;
     padding: 30px;
-    min-height: auto; }
+    min-height: auto;
+    position: initial; }
+    .main-home__content:before {
+      display: none; }
     .main-home__content h1 {
       margin: 30px 0; }
   .btn {
     height: 55px;
     font-size: 14px; }
+  .btn-video {
+    left: 50%; }
   header .logo {
     margin: 0; }
   .contests-box h3, .contests-box .contests-box-cabinet__title {
@@ -3076,7 +3096,13 @@ footer .container {
     margin: 0 0 10px; }
   .points-val {
     margin: 0 auto;
-    width: auto; } }
+    width: auto; }
+  .cabinet-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
 
 @media only screen and (max-width: 575px) {
   .about-numbers__box {
@@ -3089,7 +3115,7 @@ footer .container {
       margin: 0 0 10px; }
     .about-numbers__box .btn-black {
       margin: 20px 0 20px 20px;
-      max-width: 335px; }
+      max-width: calc(100% - 40px); }
   .about-numbers .container {
     padding: 0; }
   .about-numbers__box-max {
@@ -3302,18 +3328,32 @@ footer .container {
   .cabinet-user__body {
     width: 100%; }
     .cabinet-user__body h3 {
-      text-align: center; }
+      text-align: center;
+      max-width: 300px;
+      margin: 0 auto 20px; }
     .cabinet-user__body .btn {
+      max-width: none;
       margin: 0 auto; }
   .cabinet-user {
     margin: 20px 0 40px; }
   .points-item {
     margin: 0;
     font-size: 40px; }
+  .points-wrapper {
+    width: 100%; }
   .points-list {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%; }
+  .points-links {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
             justify-content: space-between; }
+    .points-links a {
+      margin: 0;
+      min-width: 133px; }
   .contests-box-cabinet {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3335,7 +3375,9 @@ footer .container {
     font-size: 40px; }
   .box-text-subtitle {
     margin: 20px auto;
-    font-size: 18px; } }
+    font-size: 18px; }
+  .main-home .btn {
+    max-width: none; } }
 
 @media only screen and (max-width: 480px) {
   .footer-menu {
@@ -3390,10 +3432,12 @@ footer .container {
   .main-score-img {
     margin: 0 auto; }
   .product-card {
-    width: 100%; }
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto 30px; }
   .product-card__img {
     padding: 20px 0 0;
-    height: 200px; }
+    height: 280px; }
   .button-group .btn {
     min-width: auto;
     letter-spacing: 0;

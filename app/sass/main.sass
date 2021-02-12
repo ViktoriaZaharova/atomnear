@@ -394,7 +394,7 @@ header
 .btn-video
   @include display-center
   position: absolute
-  left: 50%
+  left: 100%
   top: 50%
   transform: translate(0, -50%)
   font-size: 20px
@@ -427,11 +427,18 @@ header
   max-width: 500px
   width: 100%
   padding: 50px 60px 55px
-  //background: $blue
+  position: relative
   min-height: 480px
   color: #fff
   font-family: $roboto
-
+  &:before
+    content: ''
+    position: absolute
+    right: 500px
+    top: 0
+    width: 1400px
+    height: 100%
+    background: #24223f
   h1
     margin: 70px 0
 
@@ -750,7 +757,9 @@ header
     font-size: 30px
     font-weight: 900
     max-width: 196px
-
+  &:hover
+    .btn
+      background: $blue
 
 .score-box__body
   display: flex
