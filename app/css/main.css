@@ -2274,8 +2274,10 @@ footer .container {
     background: transparent; }
     .header-score .header-box a {
       color: #fff; }
-  .header-score .links-cabinet .svg-icon {
-    fill: #fff; }
+    .header-score .header-box .links-cabinet .svg-icon {
+      fill: #fff; }
+    .header-score .header-box .links-cabinet:hover {
+      fill: #fff; }
 
 .main-score {
   background: #0046E3; }
@@ -2299,7 +2301,7 @@ footer .container {
   width: 1077px;
   position: relative;
   z-index: 1;
-  margin: -55px 0 0; }
+  margin: 5px 0 0; }
 
 .box-text-subtitle {
   text-align: center;
@@ -2828,7 +2830,7 @@ footer .container {
             transform: none;
     letter-spacing: .4em; }
   .main-score-img {
-    margin: -15px auto 0; }
+    margin: 5px auto 0; }
   .points-val {
     width: 100px; }
   .list-sorting {
