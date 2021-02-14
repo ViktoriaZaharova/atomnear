@@ -2,7 +2,7 @@ $('.about-numbers__box-slider').slick({
     slidesToShow: 1,
     arrows: false,
     dots: true,
-    autoplay: true,
+    // autoplay: true,
 });
 
 $('.product-slider-max').slick({
