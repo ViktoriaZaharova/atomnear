@@ -48,13 +48,13 @@
       font-size: 13px
 
       &:hover
-        background: $accent
+        background: $blue
     .active
       background: #fff
       color: #201F37
 
 .journal-box
-  width: 65.5%
+  width: 65.8%
   position: relative
   display: flex
   flex-direction: column
@@ -724,7 +724,7 @@
     min-height: auto
 
   .journal-catalog .box-scroll
-    margin: 0 -20px 30px
+    margin: 13px -20px 0
 
 @media (max-width: 575px)
   .journal-item
@@ -735,14 +735,19 @@
     margin: 0 -20px 30px
 
   .journal-box__content
-    padding: 97px 30px
+    padding: 97px 10px
 
+  .journal-box-title
+    br
+      display: none
+
+  .journal-box-article
+    margin: 0 -20px 0
+    border: none
 
 @media (max-width: 480px)
   .video-box
     width: 100%
-
-
 
   .video-box
     padding: 0 0 50px
