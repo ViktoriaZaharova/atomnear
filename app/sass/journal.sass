@@ -1,0 +1,770 @@
+@import "vars"
+
+.header-box-my
+  padding: 30px 27px 30px 55px
+
+.links-cabinet-my
+  width: 50px
+  height: 50px
+  background: #F0F0F0
+  display: flex
+  align-items: center
+  justify-content: center
+
+  .svg-icon
+    margin: 0
+
+.menu-my
+  li
+    margin: 0 15px 0 0
+
+.journal
+  padding: 30px 0
+
+  .row
+    justify-content: space-between
+    align-items: flex-start
+
+.journal-category
+  width: 100%
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  margin: 0 0 23px
+
+  li
+    margin: 0 1px 1px 0
+
+    &:last-child
+      margin-right: 0
+
+    a
+      background: rgba(240, 240, 240, 0.33)
+      text-transform: uppercase
+      text-decoration: underline
+      color: #fff
+      padding: 12px 15px
+      letter-spacing: 0.14em
+      font-size: 13px
+
+      &:hover
+        background: $accent
+    .active
+      background: #fff
+      color: #201F37
+
+.journal-box
+  width: 65.5%
+  position: relative
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  margin: 0 0 30px
+  text-align: center
+
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(180deg, rgba(32, 31, 55, 0.25) 0%, rgba(32, 31, 55, 0.75) 100%)
+    z-index: 1
+
+
+.journal-box__img
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 100%
+  height: 100%
+  position: absolute
+  top: 0
+  left: 0
+
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.journal-box__content
+  position: relative
+  z-index: 1
+  width: 100%
+  height: 100%
+  padding: 99px 78px
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  justify-content: center
+
+.journal-box-category, .journal-box-date
+  letter-spacing: 0.1em
+  font-size: 12px
+  font-weight: 500
+  color: #F0F0F0
+  text-transform: uppercase
+
+.journal-box-title
+  letter-spacing: 0.05em
+  font-size: 30px
+  font-weight: 900
+  text-transform: uppercase
+  margin: 30px auto
+  color: #fff
+
+.journal-item
+  width: 31.5%
+  margin: 0 0 30px
+
+  .box-text
+    line-height: 130%
+    font-size: 12px
+    color: #F0F0F0
+
+  .date
+    color: #F0F0F0
+    margin: 12px 0 0
+    opacity: .5
+    font-size: 12px
+
+.journal-item__content
+  min-height: 70px
+
+.journal-item__img
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 200px
+  overflow: hidden
+  background: #FFFFFF
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.journal-item__title
+  margin: 14px 0 12px
+  text-transform: uppercase
+  color: #fff
+  text-decoration: underline
+  font-weight: 900
+  letter-spacing: 0.05em
+  font-size: 19px
+
+.video
+  .row
+    justify-content: space-between
+
+.video-box
+  margin: 0 0 30px
+  width: 31.5%
+  padding: 0 0 90px
+  position: relative
+  cursor: pointer
+
+  .btn
+    max-width: 213px
+    height: 40px
+    letter-spacing: 0
+    display: none
+    position: absolute
+    left: 0
+    bottom: 0
+
+  &:hover
+    .btn
+      display: flex
+
+    .video-box__img
+      &:before
+        opacity: 0
+
+.video-box__img
+  position: relative
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 176px
+  overflow: hidden
+
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    transition: .3s ease
+    background: rgba(#201F37, .5)
+
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.btn-play
+  display: flex
+  align-items: center
+  justify-content: center
+  position: absolute
+  left: 50%
+  top: 50%
+  z-index: 1
+  width: 48px
+  height: 48px
+  border-radius: 50%
+  background: $blue
+  padding: 14px 12px 14px 16px
+  fill: #fff
+  transform: translate(-50%, -50%)
+
+.btn-play-icon
+  width: 19px
+  height: 19px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.video-box__content
+  padding: 20px 0 0
+
+.video-box__title
+  letter-spacing: 0.05em
+  text-decoration: underline
+  color: #fff
+  font-size: 19px
+  font-weight: 900
+  margin: 0 0 8px
+  text-transform: uppercase
+
+.video-author
+  color: #F0F0F0
+  font-size: 12px
+  opacity: .5
+
+.video-catalog
+  .journal-category
+    margin: 23px 0 0
+
+  .row
+    justify-content: space-between
+
+  .video-box
+    padding: 0 0 45px
+    margin: 0
+
+
+.filter
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  margin: 0 0 48px
+
+  li
+    margin: 0 1px 1px 0
+
+    &:last-child
+      margin-right: 0
+
+    a
+      padding: 6.5px 19px
+      color: #fff
+      font-size: 14px
+      font-weight: 500
+      background: $blue
+
+      &:hover
+        color: #201F37
+        background: #fff
+
+    .active
+      background: #fff
+      color: #201F37
+
+.pagination
+  width: 100%
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  li
+    margin: 0 10px 2px 0
+    &:last-child
+      margin: 0 0 2px
+    a
+      border: 1px solid rgba(240, 240, 240, 0.33)
+      display: flex
+      align-items: center
+      justify-content: center
+      padding: 5px
+      letter-spacing: 0.14em
+      font-size: 14px
+      color: #fff
+      font-weight: 500
+      width: 50px
+      height: 50px
+      &:hover
+        background: $blue
+        border-color: $blue
+    .active
+      background: $blue
+      border-color: $blue
+    .pagination-next
+      width: auto
+      padding: 0 27px
+      background: $blue
+      border-color: $blue
+
+.box-scroll
+  width: 100%
+
+.result-tag
+  width: 100%
+  display: flex
+  align-items: center
+  margin: 0 0 40px
+  font-size: 13px
+  letter-spacing: 0.14em
+  strong
+    font-weight: bold
+
+.video-catalog-result__wrapper
+  margin: 0 0 76px
+  width: 100%
+  .filter
+    margin: 0 0 19px
+
+.tag-delete
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  margin: 0 0 0 9px
+  width: 15px
+  height: 15px
+  &:before, &:after
+    content: ''
+    position: absolute
+    left: 7px
+    top: 0
+    width: 2px
+    height: 15px
+    background: #646474
+  &:before
+    transform: rotate(45deg)
+  &:after
+    transform: rotate(135deg)
+
+.article
+  width: 100%
+  background: #fff
+  .journal-box-title
+    font-size: 27px
+    color: #201F37
+    text-align: center
+    line-height: 130%
+    margin: 15px auto
+  .journal-box-category
+    text-align: center
+    color: #201F37
+    line-height: 130%
+
+.article-author
+  color: #0046E3
+  font-size: 12px
+  line-height: 130%
+  text-align: center
+
+.article-body
+  padding: 37px 125px 36px
+  color: #201F37
+  font-size: 15px
+
+  .box-text
+    line-height: 140%
+    p
+      margin: 0 0 12px
+      &:last-child
+        margin: 0
+    h6
+      margin: 0 0 22px
+      font-size: 18px
+      font-weight: 500
+      line-height: 130%
+    strong
+      font-weight: 700
+    ul
+      margin: 0 0 16px
+    .text-links
+      display: inline-block
+  h3
+    letter-spacing: 0.05em
+    font-size: 19px
+    font-weight: 900
+    text-transform: uppercase
+    margin: 0 0 10px
+
+.color-accent
+  color: $blue
+
+.article-img
+  max-width: 200px
+  margin: 0 25px 10px 0
+  float: left
+  display: inline-block
+
+.share
+  margin: 25px 0 0
+  width: 100%
+  max-width: 590px
+
+.blockquote
+  line-height: 140%
+  margin: 20px 0 25px
+  position: relative
+  padding: 0 0 0 40px
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 30px
+    height: 19px
+    background: url("../img/quote.svg") no-repeat center
+      size: contain
+
+.video-iframe
+  margin: 0 0 25px
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 420px
+  iframe
+    width: 100%
+    height: 100%
+
+.article-nav
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: 20px 0 10px
+
+.article-nav__links
+  display: flex
+  align-items: center
+  color: #201F37
+  font-size: 13px
+  font-weight: 500
+  .svg-icon
+    width: 13px
+    height: 6px
+    margin: 0 6px 0 0
+    fill: #0046E3
+  .text-links
+    text-decoration: underline
+  &:hover
+    color: $blue
+
+.article-nav__links-next
+  .svg-icon
+    margin: 0 0 0 6px
+    order: 1
+
+.article-footer
+  background: #F0F0F0
+  padding: 42px 125px
+
+.links-next
+  letter-spacing: 0.14em
+  text-decoration: underline
+  color: #201F37
+  font-size: 13px
+  line-height: 130%
+
+.video-page
+  margin: 27px 0 66px
+
+.list-tags
+  width: 100%
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  margin: 0 0 13px
+  li
+    margin: 0 10px 6px 0
+    &:last-child
+      margin-right: 0
+    a
+      background: $blue
+      color: #fff
+      font-size: 14px
+      font-weight: 500
+      padding: 12px 20px
+      &:hover
+        background: $accent
+
+.journal-box-article
+  margin: 0
+  width: 100%
+  border: 1px solid #F0F0F0
+  min-height: 497px
+
+.list-dots
+  padding: 0 0 0 20px
+  li
+    margin: 0 0 10px
+    position: relative
+    padding: 0 0 0 20px
+    &:last-child
+      margin: 0
+    &:before
+      width: 7px
+      height: 7px
+      background: $blue
+      border-radius: 50%
+      content: ''
+      position: absolute
+      left: 0
+      top: 7px
+
+.decor-box
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  margin: 0 auto 26px
+  img
+    background: #fff
+    max-width: 25px
+    margin: 0 15px
+  &:before, &:after
+    content: ''
+    background: #0046E3
+    height: 1px
+    width: 44px
+    display: inline-block
+
+.img-wrapper
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+
+.signature
+  width: 100%
+  margin: 10px 0 20px
+  color: #A5A5A5
+  font-size: 13px
+
+.journal-catalog
+  .box-scroll
+    margin: 0 0 30px
+
+.journal-box.w-100
+  width: 100%
+
+.journal-item.w-50
+  width: 48.5%
+
+@media (max-width: 992px)
+  .menu-my
+    margin: 0
+
+  .links-cabinet-my
+    width: 40px
+    height: 40px
+
+  .journal-box__content
+    padding: 97px 30px
+
+  .video-box__title
+    font-size: 16px
+
+  .header-box-my
+    padding: 30px 17px
+
+@media (max-width: 768px)
+  .journal-box-title
+    font-size: 24px
+    margin: 20px auto
+
+  .journal-item__title
+    font-size: 16px
+
+  .video-box
+    width: 48.5%
+
+  .video-box__title
+    font-size: 19px
+
+  .article-body
+    padding: 27px 20px
+
+  .article-footer
+    padding: 23px 20px
+
+  .journal-box-article
+    min-height: 375px
+
+  .article-body .box-text h6
+    font-size: 14px
+
+@media (max-width: 630px)
+  .links-cabinet-my
+    background: transparent
+    width: auto
+    height: auto
+
+  .header-box-my
+    padding: 0
+
+  .journal-item
+    width: 48.5%
+
+  .journal-box
+    width: 100%
+
+  .video-catalog
+    h1
+      text-align: center
+
+  .pagination li a
+    font-size: 12px
+    width: 40px
+    height: 40px
+
+  .pagination li .pagination-next
+    padding: 0 10px
+    width: auto
+
+  .filter
+    margin: 0 0 20px
+
+  .journal-category
+    flex-wrap: nowrap
+    overflow-x: auto
+    width: 100%
+
+    li
+      a
+        white-space: nowrap
+
+  .box-scroll
+    width: calc(100% + 40px)
+    overflow-x: auto
+    position: relative
+    margin: 13px -20px 0
+    &:before
+      content: ''
+      position: absolute
+      right: 0
+      top: 0
+      height: 100%
+      background: linear-gradient(270deg, #201F37 0%, rgba(32, 31, 55, 0) 93.75%)
+      width: 50px
+
+  .filter, .video-catalog-result__wrapper .filter
+    width: calc(100% + 40px)
+    margin: 0 -20px 20px
+
+  .video-catalog .journal-category
+    margin: 0
+
+  .video-catalog-result__wrapper
+    margin: 0 0 30px
+
+  .video-page
+    margin: 13px 0 40px
+    .title-links
+      text-align: center
+      margin: 0 auto 13px
+
+  .article
+    width: calc(100% + 40px)
+    margin: 0 -20px
+    .journal-box-title
+      margin: 10px auto
+      font-size: 17px
+      letter-spacing: 0
+    .box-text
+      font-size: 14px
+
+  .article-img
+    max-width: 130px
+    margin: 0 15px 10px 0
+
+  .article-nav
+    margin: 15px 0 10px
+
+  .article-nav__links
+    font-size: 12px
+
+  .video-iframe
+    margin: 0 0 15px
+    height: 300px
+
+  .journal-box-article
+    width: calc(100% + 40px)
+    margin: 0 -20px
+    br
+      display: none
+
+  .article-body .box-text ul
+    padding: 0
+
+  .journal-item__content
+    min-height: auto
+
+  .journal-catalog .box-scroll
+    margin: 0 -20px 30px
+
+@media (max-width: 575px)
+  .journal-item
+    width: 100%
+
+  .journal-box
+    width: calc(100% + 40px)
+    margin: 0 -20px 30px
+
+  .journal-box__content
+    padding: 97px 30px
+
+
+@media (max-width: 480px)
+  .video-box
+    width: 100%
+
+
+
+  .video-box
+    padding: 0 0 50px
+
+  .video-catalog
+    .row
+      .video-box
+        display: none
+        &:nth-child(-n+3)
+          display: block
+
+  .journal-catalog
+    .row
+      .journal-col
+        display: none
+        &:nth-child(-n+5)
+          display: block
+
+  .video-iframe
+    height: 188px
+
+  .list-tags
+    li
+      a
+        padding: 6px 8px

@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Атомрядом</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/journal.css">
+
+</head>
+
+<body>
+
+<div class="mobile-menu">
+  <div class="btn-close"></div>
+
+
+  <div class="mobile-menu__body">
+    <ul class="menu">
+      <li><a href="competition.html">КОНКУРСЫ</a></li>
+      <li><a href="score.html">МАГАЗИН ПРИЗОВ</a></li>
+      <li><a href="#about" class="go_to">О ПРОЕКТЕ</a></li>
+    </ul>
+  </div>
+</div>
+
+<header class="header">
+  <div class="container">
+    <div class="btn-burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="logo-wrapper">
+      <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+    </div>
+    <div class="header-box header-box-my">
+      <ul class="menu menu-my">
+        <li><a href="competition.html">КОНКУРСЫ</a></li>
+        <li><a href="score.html">ПРИЗЫ</a></li>
+        <li><a href="journal.html">ЖУРНАЛ</a></li>
+        <li><a href="video.html">ВИДЕО</a></li>
+        <li><a href="maps.html">КАРТА</a></li>
+      </ul>
+
+      <a href="#modal__registration" class="links-cabinet open_modal links-cabinet-my">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#cabinet"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<section class="contests competition video-page">
+  <div class="container">
+    <a href="#" class="title-links">ВИДЕО</a>
+
+    <div class="article">
+      <div class="article-body">
+
+        <div class="journal-box-category">АТОМНЫЕ ГОРОДА</div>
+        <div class="journal-box-title">Из ЗАТО с приветом: сколько в России закрытых
+          городов?
+        </div>
+
+        <div class="article-author">Морозова Марина Александровна</div>
+        <div class="article-nav">
+          <a href="#" class="article-nav__links">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#arrow-left"></use>
+            </svg>
+            <span class="text-links">Предыдущее видео</span>
+          </a>
+          <a href="#" class="article-nav__links article-nav__links-next">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#arrow-right"></use>
+            </svg>
+            <span class="text-links">Следующее видео</span>
+          </a>
+        </div>
+
+        <div class="video-iframe">
+          <iframe src="https://www.youtube.com/embed/aG4-PPMSbFY" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+        </div>
+        <div class="share"><img src="img/share.png" alt=""></div>
+
+      </div>
+
+      <div class="article-footer">
+        <ul class="list-tags">
+          <li><a href="#">Атомные города</a></li>
+          <li><a href="#">ЗАТО</a></li>
+          <li><a href="#">Промышленность</a></li>
+        </ul>
+
+        <a href="video.html" class="links-next">ВЕРНУТЬСЯ К СПИСКУ</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="video">
+  <div class="container">
+    <h2>Смотреть ещё:</h2>
+
+    <div class="row">
+      <div class="video-box">
+        <div class="video-box__img">
+          <img src="img/video1.png" alt="">
+          <a href="video-page.html" class="btn-play">
+            <span class="btn-play-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#play"></use></svg></span>
+          </a>
+        </div>
+
+        <div class="video-box__content">
+          <a href="video-page.html" class="video-box__title">о плавучей атомной станции "Академик Ломоносов"</a>
+          <div class="video-author">Морозова Марина Александровна</div>
+
+          <a href="video-page.html" class="btn btn-blue">Смотреть все видео</a>
+        </div>
+      </div>
+
+      <div class="video-box">
+        <div class="video-box__img">
+          <img src="img/video2.png" alt="">
+          <a href="video-page.html" class="btn-play">
+            <span class="btn-play-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#play"></use></svg></span>
+          </a>
+        </div>
+
+        <div class="video-box__content">
+          <a href="video-page.html" class="video-box__title">о гордости Воронежской области — Нововоронежской АЭС</a>
+          <div class="video-author">Лялин Михаил Вячеславович</div>
+
+          <a href="video-page.html" class="btn btn-blue">Смотреть все видео</a>
+        </div>
+      </div>
+
+      <div class="video-box">
+        <div class="video-box__img">
+          <img src="img/video3.png" alt="">
+          <a href="video-page.html" class="btn-play">
+            <span class="btn-play-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#play"></use></svg></span>
+          </a>
+        </div>
+
+        <div class="video-box__content">
+          <a href="video-page.html" class="video-box__title">Творческие коллективы Сахалинской филармонии</a>
+          <div class="video-author">Максим Николаевич Зеленин</div>
+
+          <a href="video-page.html" class="btn btn-blue">Смотреть все видео</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="container">
+    <div class="bg-red footer-bg-box"></div>
+    <div class="footer-content">
+      <div class="copyright">© 2020–2021. Фонд развития регионов «Содружество»</div>
+
+      <div class="footer-wrapper w-100">
+        <div class="wrapper">
+          <ul class="footer-menu">
+            <li><a href="#about" class="go_to">О проекте</a></li>
+            <li><a href="#">Правила сайта</a></li>
+            <li><a href="#">Политика конфиденциальности</a></li>
+          </ul>
+
+          <div class="box-contacts">
+            <p>Для связи:</p>
+            <a href="mailto:info@atomryadom.ru" class="mail">info@atomryadom.ru</a>
+          </div>
+        </div>
+
+        <ul class="list-social">
+          <li><a href="#" class="links-fb">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#fb"></use>
+            </svg>
+          </a></li>
+          <li><a href="#" class="links-vk">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#vk"></use>
+            </svg>
+          </a></li>
+          <li><a href="#" class="links-instagram">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#instagram"></use>
+            </svg>
+          </a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<!--modal-->
+<div class="modal__div" id="modal__registration">
+  <div class="modal__wrapper">
+    <div class="modal__close"></div>
+
+    <div class="modal__body">
+      <div class="tabs w-100">
+        <ul class="tabs__caption">
+          <li class="active">РЕГИСТРАЦИЯ</li>
+          <li>ВХОД</li>
+        </ul>
+        <div class="tabs__content active">
+          <div class="modal__body-content">
+            <div class="entrance-social">
+              <p>Войди через социальную сеть </p>
+              <ul class="list-social-entrance">
+                <li><a href="#" class="fb">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#fb"></use>
+                  </svg>
+                </a></li>
+                <li><a href="#" class="vk">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#vk"></use>
+                  </svg>
+                </a></li>
+                <li><a href="#" class="ok">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#ok"></use>
+                  </svg>
+                </a></li>
+              </ul>
+            </div>
+
+            <form method="post" class="form">
+
+              <label>
+                <span class="input-title">Имя</span>
+                <input type="text" name="name" placeholder="Константин">
+              </label>
+
+              <label>
+                <span class="input-title">Фамилия</span>
+                <input type="text" name="first_name" placeholder="Константинопольский">
+              </label>
+
+              <label>
+                <span class="input-title">E-mail</span>
+                <input type="text" name="mail" placeholder="konst.konstantinopolsky@gmail.com" required>
+              </label>
+
+              <label>
+                <span class="input-title">Город</span>
+                <input type="text" name="city" placeholder="Москва">
+              </label>
+
+              <button type="submit" class="btn btn-blue">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+
+              <div class="consent">
+                <p>Регистрируясь, вы принимаете условия <a href="#" class="link-inline text-decoration">пользовательского
+                  соглашения</a>, соглашаетесь с
+                  <a href="#" class="link-inline text-decoration">политикой в отношении
+                    обработки персональных данных</a> и даете согласие на <a href="#"
+                                                                             class="link-inline text-decoration">обработку
+                    персональных данных</a>.</p>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="tabs__content">
+          <div class="modal__body-content">
+            <div class="entrance-social">
+              <p>Войди через социальную сеть </p>
+              <ul class="list-social-entrance">
+                <li><a href="#" class="fb">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#fb"></use>
+                  </svg>
+                </a></li>
+                <li><a href="#" class="vk">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#vk"></use>
+                  </svg>
+                </a></li>
+                <li><a href="#" class="ok">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#ok"></use>
+                  </svg>
+                </a></li>
+              </ul>
+            </div>
+
+            <form method="post" class="form">
+              <label>
+                <span class="input-title">E-mail</span>
+                <input type="text" name="mail" placeholder="konst.konstantinopolsky@gmail.com" required>
+              </label>
+
+              <label>
+                <span class="input-title">Пароль</span>
+                <input type="text" name="password" placeholder="•••••••••••••" required>
+              </label>
+
+              <div class="error-text">Неверный e-mail или пароль!</div>
+
+              <button type="submit" class="btn btn-blue">ВОЙТИ</button>
+
+              <div class="consent">
+                <a href="#recovery__modal" class="text-decoration open_modal text-center link-modal">Восстановление
+                  пароля</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal__div" id="modal__entrance">
+  <div class="modal__wrapper">
+    <div class="modal__close"></div>
+
+    <div class="modal__body">
+      <div class="tabs w-100">
+        <ul class="tabs__caption">
+          <li>РЕГИСТРАЦИЯ</li>
+          <li class="active">ВХОД</li>
+        </ul>
+        <div class="tabs__content">
+          <div class="modal__body-content">
+            <div class="entrance-social">
+              <p>Войди через социальную сеть </p>
+              <ul class="list-social-entrance">
+                <li><a href="#" class="fb">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#fb"></use>
+                  </svg>
+                </a></li>
+                <li><a href="#" class="vk">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#vk"></use>
+                  </svg>
+                </a></li>
+                <li><a href="#" class="ok">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#ok"></use>
+                  </svg>
+                </a></li>
+              </ul>
+            </div>
+
+            <form method="post" class="form">
+
+              <label>
+                <span class="input-title">Имя</span>
+                <input type="text" name="name" placeholder="Константин">
+              </label>
+
+              <label>
+                <span class="input-title">Фамилия</span>
+                <input type="text" name="first_name" placeholder="Константинопольский">
+              </label>
+
+              <label>
+                <span class="input-title">E-mail</span>
+                <input type="text" name="mail" placeholder="konst.konstantinopolsky@gmail.com" required>
+              </label>
+
+              <label>
+                <span class="input-title">Город</span>
+                <input type="text" name="city" placeholder="Москва">
+              </label>
+
+              <button type="submit" class="btn btn-blue">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+
+              <div class="consent">
+                <p>Регистрируясь, вы принимаете условия <a href="#" class="link-inline text-decoration">пользовательского
+                  соглашения</a>, соглашаетесь с
+                  <a href="#" class="link-inline text-decoration">политикой в отношении
+                    обработки персональных данных</a> и даете согласие на <a href="#"
+                                                                             class="link-inline text-decoration">обработку
+                    персональных данных</a>.</p>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="tabs__content active">
+          <div class="modal__body-content">
+            <div class="entrance-social">
+              <p>Войди через социальную сеть </p>
+              <ul class="list-social-entrance">
+                <li><a href="#" class="fb">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#fb"></use>
+                  </svg>
+                </a></li>
+                <li><a href="#" class="vk">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#vk"></use>
+                  </svg>
+                </a></li>
+                <li><a href="#" class="ok">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#ok"></use>
+                  </svg>
+                </a></li>
+              </ul>
+            </div>
+
+            <form method="post" class="form">
+              <label>
+                <span class="input-title">E-mail</span>
+                <input type="text" name="mail" placeholder="konst.konstantinopolsky@gmail.com" required>
+              </label>
+
+              <label>
+                <span class="input-title">Пароль</span>
+                <input type="text" name="password" placeholder="•••••••••••••" required>
+              </label>
+
+              <div class="error-text">Вы ввели неверные e-mail и пароль 10 раз и заблокированы на 1 час!</div>
+
+              <button type="submit" class="btn btn-blue" disabled>ВОЙТИ</button>
+
+              <div class="consent">
+                <a href="#recovery__modal" class="text-decoration open_modal text-center link-modal">Восстановление
+                  пароля</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal__div modal__div2" id="recovery__modal">
+  <div class="modal__wrapper">
+    <div class="modal__close"></div>
+
+    <div class="modal__body">
+      <div class="modal__body-content">
+        <h2>ВОССТАНОВЛЕНИЕ ПАРОЛЯ</h2>
+
+        <form method="post" class="form">
+          <label>
+            <span class="input-title">E-mail</span>
+            <input type="text" name="mail" placeholder="konst.konstantinopolsky@gmail.com" required>
+          </label>
+
+          <button type="submit" class="btn btn-blue">ОТПРАВИТЬ</button>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal__div modal__div2" id="recovery__modal-result">
+  <div class="modal__wrapper">
+    <div class="modal__close"></div>
+
+    <div class="modal__body">
+      <div class="modal__body-content">
+        <h2>ВОССТАНОВЛЕНИЕ ПАРОЛЯ</h2>
+
+        <div class="box-text text-center">
+          <p>Письмо с информацией о пароле отправлена <br> на указанный e-mail</p>
+        </div>
+
+        <a href="#" class="btn btn-blue btn-modal-close">ВХОД</a>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Пoдлoжкa -->
+<div class="overlay"></div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
