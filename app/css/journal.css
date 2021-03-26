@@ -616,6 +616,10 @@
   width: 100%;
   border: 1px solid #F0F0F0;
   min-height: 497px; }
+  .journal-box-article .journal-box__img {
+    width: 100%; }
+  .journal-box-article .journal-box:before {
+    width: 100%; }
 
 .list-dots {
   padding: 0 0 0 20px; }
@@ -825,7 +829,8 @@
     display: none; }
   .journal-box-article {
     margin: 0 -20px 0;
-    border: none; } }
+    border: none;
+    width: calc(100% + 40px); } }
 
 @media (max-width: 480px) {
   .video-box {
