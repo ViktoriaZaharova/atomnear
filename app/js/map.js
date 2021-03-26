@@ -72,7 +72,7 @@ function initMap() {
 
 google.maps.event.addDomListener(window, "load", initMap);
 
-function addMarker(latLng, name, address, buttonWrapper) {
+function addMarker(latLng, name, address) {
     var marker = new google.maps.Marker({
         position: latLng,
         map: map,
@@ -85,7 +85,7 @@ function addMarker(latLng, name, address, buttonWrapper) {
 
         $(this).addClass('clicked');
         var contentString = '<div class="infowindow"> <div class="infowindow-header">' + name + '</div>' +
-            '<div class="infowindow-body">' + address + '</div></div>';
+            '<div class="infowindow-body">'+ address +'</div></div>';
 
         infoWindow.setContent(contentString);
         infoWindow.open(map, marker);
