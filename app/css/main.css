@@ -321,17 +321,19 @@ h2 {
   -webkit-transition: .3s ease;
   transition: .3s ease; }
 
-header .container {
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-
-header .logo {
-  max-width: 250px;
-  margin: 0 0 0 57px; }
+header {
+  z-index: 2;
+  position: relative; }
+  header .container {
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  header .logo {
+    max-width: 250px;
+    margin: 0 0 0 57px; }
 
 .logo-wrapper {
   display: -webkit-box;
